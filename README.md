@@ -10,7 +10,7 @@ You can help by downloading this theme, testing it, and leaving feedback (in bot
 To Do
 -------
 * Convert all em values to rem values
-* Finish adding + styling all post formats
+* Finish adding + styling all post formats (Aside, Image, Link, Gallery, Quote, Status)
 * Clean up typograhpy (line-heights, font sizes, etc)
 * Make sure pot/mo files are synced
 
