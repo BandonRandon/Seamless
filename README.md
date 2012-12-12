@@ -11,3 +11,4 @@ References
 * Brian Krogsgard's Happy theme - https://github.com/krogsgard/happy
 * The Underscores theme by Automattic - https://github.com/automattic/_s
 * The Twenty Twelve theme - http://wordpress.org/extend/themes/twentytwelve
+* Various php snippets from Justin Tadlock - http://justintadlock.com and http://themehybrid.com
