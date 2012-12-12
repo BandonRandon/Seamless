@@ -13,6 +13,7 @@ To Do
 * Finish adding + styling all post formats (Aside, Image, Link, Gallery, Quote, Status)
 * Add support for custom headers
 * Clean up typograhpy/CSS (line-heights, font sizes, etc)
+* Clean up all php/html (Quadurple check every single file)
 * Make sure pot/mo files are synced
 * Update the screenshot
 
