@@ -1,4 +1,4 @@
-Seamless Base
+Seamless
 =============
 
 This Hybrid Core parent theme is an attempt to address the lack of good responsive themes for Hybrid Core. 
