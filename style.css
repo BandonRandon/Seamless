@@ -1078,7 +1078,8 @@ http://qrayg.com/experiment/cssmenus/
 
 .entry-meta {
 	clear: both;
-	margin: 0;
+	margin: 10px 0;
+	margin: 1.0rem 0;
 	font-size: 12px;
 	font-size: 1.2rem;
 }
@@ -1127,7 +1128,9 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .page-links {
-	clear: both;	
+	clear: both;
+	margin: 10px 0;
+	margin: 1rem 0;	
 }
 .page-links a {
 	display: inline-block;
@@ -1684,8 +1687,7 @@ http://qrayg.com/experiment/cssmenus/
 
 @media (min-width: 30em) and (max-width: 45.49em) {
 
-	#container,
-	#footer .wrap { width: 98%; }
+	#container { width: 98%; }
 	
 	#content, 
 	.layout-1c #content, 
