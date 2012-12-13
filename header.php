@@ -31,8 +31,6 @@
 
 	<div id="container">
 
-		<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
-
 		<?php do_atomic( 'before_header' ); // seamless_before_header ?>
 
 		<div id="header">
@@ -58,7 +56,7 @@
 
 		<?php do_atomic( 'after_header' ); // seamless_after_header ?>
 
-		<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
+		<?php get_template_part( 'menu', 'primary' ); // Loads the menu-secondary.php template. ?>
 
 		<?php do_atomic( 'before_main' ); // seamless_before_main ?>
 
