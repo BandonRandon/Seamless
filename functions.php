@@ -46,7 +46,7 @@ function seamless_theme_setup() {
 	$prefix = hybrid_get_prefix();
 
 	/* Add theme support for core framework features. */
-	add_theme_support( 'hybrid-core-menus', array( 'secondary', 'subsidiary' ) );
+	add_theme_support( 'hybrid-core-menus', array( 'primary', 'subsidiary' ) );
 	add_theme_support( 'hybrid-core-sidebars', array( 'primary', 'secondary', 'header', 'subsidiary', 'after-singular' ) );
 	add_theme_support( 'hybrid-core-widgets' );
 	add_theme_support( 'hybrid-core-shortcodes' );

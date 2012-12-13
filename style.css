@@ -683,10 +683,7 @@ input[type="submit"].toggled-on {
 	font-size: 1.2rem;
 	color: #aaa;
 	border: 1px solid #dfdfdf;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-radius: 4px;
 }
 
 .searchform input[type="text"]:focus,
@@ -695,13 +692,9 @@ input[type="submit"].toggled-on {
 	background: #fefefe;
 	border-color: #cfcfcf;
 	height: 32px;
-	height: 2rem;
-	padding: 6px 10px;
+	height: 3.2rem;
+	padding: 3.75px 6.25px;
 	padding: 0.375rem 0.625rem;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
 	border: 1px solid #dfdfdf;
 }
 
@@ -713,10 +706,6 @@ input[type="submit"].toggled-on {
 	height: 3.2rem;
 	padding: 6px 10px;
 	padding: 0.6rem 1.0rem;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
 	margin: 0;
 }
 
@@ -791,13 +780,13 @@ input[type="submit"].toggled-on {
 	overflow: hidden; 
 	float: right;
 	background: none;
-	width: 60%;
+	width: 50%;
 	margin: 0;
 	padding: 0;
 }
 
 #sidebar-header .widget {
-	float: left;
+	float: right;
 	width: 47.5%;
 	margin: 0 0 0 2.5%;
 }
@@ -821,59 +810,24 @@ input[type="submit"].toggled-on {
 }
 
 .main-small-navigation,
-.main-small-secondary-navigation {
+.main-small-primary-navigation {
 	text-align: center;
 }
 
 .main-small-navigation .menu,
-.main-small-secondary-navigation .menu {
+.main-small-primary-navigation .menu {
 	display: none;
 	text-align: left;
 }
 
 .main-small-navigation .menu > ul,
-.main-small-secondary-navigation .menu > ul {
+.main-small-primary-navigation .menu > ul {
 	margin: 0 auto;
 	padding: 0;
 }		
 		
 /* end-header */
 		
-
-
-/* #feature area */
-
-#feature {
-	width: 100%;
-	background: none;
-	clear: both;
-}
-
-#feature .wrap{
-	overflow: hidden;
-	clear: both;
-	margin: 0 auto;
-}
-
-
-
-#sidebar-feature {
-	overflow: hidden;
-	margin: 0 auto;
-	background: none;
-	padding: 5px 0;
-	padding: 0.5rem 0;
-	width: inherit;
-	text-align: center;
-}
-#sidebar-feature .widget-title {
-	
-}
-
-/* end-splash */
-
-
-
 /* main-menu */
 
 /*
@@ -883,14 +837,14 @@ Adapted to Happy theme in various ways
 http://qrayg.com/experiment/cssmenus/
 */
 
-.secondary-navigation {
+.primary-navigation {
 	clear: both;
 	display: block;
 	text-align: left;
 	padding: 0 25px;
 	padding: 0 2.5rem;
 }
-.secondary-navigation .wrap {
+.primary-navigation .wrap {
 	margin: 0 auto;
 	position: relative;
 	overflow: visible;
@@ -898,16 +852,16 @@ http://qrayg.com/experiment/cssmenus/
 	border-bottom: 1px solid #ddd;
 }
 
-.secondary-navigation .wrap:after {  content:"."; clear:both; display:block; height:0; visibility:hidden; } /* forces layout */
+.primary-navigation .wrap:after {  content:"."; clear:both; display:block; height:0; visibility:hidden; } /* forces layout */
 
-.secondary-navigation ul { 
+.primary-navigation ul { 
 	margin: 0; 
 	padding: 0; 
 	list-style: none; 
 	position: relative; 
 }
 
-.secondary-navigation ul ul {
+.primary-navigation ul ul {
 	width: 200px !important; /* Sub Menu Width */
 	margin: 0;
 	list-style: none;
@@ -918,19 +872,19 @@ http://qrayg.com/experiment/cssmenus/
 	z-index: 9999;
 }
 
-.secondary-navigation ul ul ul,
-.secondary-navigation ul ul ul ul { 
+.primary-navigation ul ul ul,
+.primary-navigation ul ul ul ul { 
 	top: 0; 
 	left: 100%; 
 	width: 100%; /* Sub Menu Width */
 }
 
-.secondary-navigation ul li { 
+.primary-navigation ul li { 
 	float: left; 
 	display: inline; 
 	position: relative; 
 }
-.secondary-navigation ul ul li a { 
+.primary-navigation ul ul li a { 
 	width: 100%; 
 	display: block;
 	padding: 5px 8px;
@@ -938,7 +892,7 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* Root Menu */
-.secondary-navigation ul a {
+.primary-navigation ul a {
 	float: left;
 	display: block;
 	text-decoration: none;
@@ -952,60 +906,60 @@ http://qrayg.com/experiment/cssmenus/
 
 
 /* 2nd Menu */
-.secondary-navigation ul li:hover li a, 
-.secondary-navigation ul li.iehover li a {
+.primary-navigation ul li:hover li a, 
+.primary-navigation ul li.iehover li a {
 	float: none;
 	background: #eee;
 	border-top: 1px solid #ddd;
 }
 
 /* 2nd Menu Hover Persistence */
-.secondary-navigation ul li:hover li a:hover,
-.secondary-navigation ul li:hover li:hover a,
-.secondary-navigation ul li.iehover li a:hover,
-.secondary-navigation ul li.iehover li.iehover a {
+.primary-navigation ul li:hover li a:hover,
+.primary-navigation ul li:hover li:hover a,
+.primary-navigation ul li.iehover li a:hover,
+.primary-navigation ul li.iehover li.iehover a {
     background: #e7e7e7;
 }
 
 /* 3rd Menu */
-.secondary-navigation ul li:hover li:hover li a,
-.secondary-navigation ul li.iehover li.iehover li a {
+.primary-navigation ul li:hover li:hover li a,
+.primary-navigation ul li.iehover li.iehover li a {
  background: #e7e7e7;
 }
 
 /* 3rd Menu Hover Persistence */
-.secondary-navigation ul li:hover li:hover li a:hover,
-.secondary-navigation ul li:hover li:hover li:hover a,
-.secondary-navigation ul li.iehover li.iehover li a:hover,
-.secondary-navigation ul li.iehover li.iehover li.iehover a {
+.primary-navigation ul li:hover li:hover li a:hover,
+.primary-navigation ul li:hover li:hover li:hover a,
+.primary-navigation ul li.iehover li.iehover li a:hover,
+.primary-navigation ul li.iehover li.iehover li.iehover a {
  background: #e3e3e3;
 }
 
 /* 4th Menu */
-.secondary-navigation ul li:hover li:hover li:hover li a,
-.secondary-navigation ul li.iehover li.iehover li.iehover li a {
+.primary-navigation ul li:hover li:hover li:hover li a,
+.primary-navigation ul li.iehover li.iehover li.iehover li a {
  background: #e3e3e3;
 }
 
 /* 4th Menu Hover */
-.secondary-navigation ul li:hover li:hover li:hover li a:hover,
-.secondary-navigation ul li.iehover li.iehover li.iehover li a:hover {
+.primary-navigation ul li:hover li:hover li:hover li a:hover,
+.primary-navigation ul li.iehover li.iehover li.iehover li a:hover {
  background: #e3e3e3;
 }
 
 /* Hover Function - Do Not Move */
-.secondary-navigation ul li:hover ul ul,
-.secondary-navigation ul li:hover ul ul ul,
-.secondary-navigation ul li.iehover ul ul,
-.secondary-navigation ul li.iehover ul ul ul { 
+.primary-navigation ul li:hover ul ul,
+.primary-navigation ul li:hover ul ul ul,
+.primary-navigation ul li.iehover ul ul,
+.primary-navigation ul li.iehover ul ul ul { 
 	display: none; 
 }
-.secondary-navigation ul li:hover ul,
-.secondary-navigation ul ul li:hover ul,
-.secondary-navigation ul ul ul li:hover ul,
-.secondary-navigation ul li.iehover ul,
-.secondary-navigation ul ul li.iehover ul,
-.secondary-navigation ul ul ul li.iehover ul { 
+.primary-navigation ul li:hover ul,
+.primary-navigation ul ul li:hover ul,
+.primary-navigation ul ul ul li:hover ul,
+.primary-navigation ul li.iehover ul,
+.primary-navigation ul ul li.iehover ul,
+.primary-navigation ul ul ul li.iehover ul { 
 	display: block; 
 }
 
@@ -1487,9 +1441,9 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 #sidebar-subsidiary .widget {
-	width: 23%;
+	width: 31%;
 	float: left;
-	margin: 0 1%;
+	margin: 1% 1% 4% 1%;
 	padding: 0 1%;
 }
 
@@ -1760,12 +1714,12 @@ http://qrayg.com/experiment/cssmenus/
 	}
 	
 	.main-small-navigation, 
-	.main-small-secondary-navigation {
+	.main-small-primary-navigation {
 		padding: 10px;
 		padding: 1rem;
 	}
 	.main-small-navigation, 
-	.main-small-secondary-navigation {
+	.main-small-primary-navigation {
         padding: 10px;
 		padding: 1rem;
         width: 82%;
@@ -1827,7 +1781,7 @@ http://qrayg.com/experiment/cssmenus/
 	}
 	
 	.main-small-navigation, 
-	.main-small-secondary-navigation {
+	.main-small-primary-navigation {
         padding: 10px;
 		padding: 1rem;
         width: 82%;

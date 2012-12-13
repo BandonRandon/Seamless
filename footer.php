@@ -17,7 +17,7 @@
 
 				<?php do_atomic( 'close_main' ); // seamless_close_main ?>
 
-        <!-- Old Man + Wrap -->
+        <!-- Old Main + Wrap -->
 
 		<?php do_atomic( 'after_main' ); // seamless_after_main ?>
 
