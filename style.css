@@ -1385,9 +1385,9 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 #footer .wrap {
-	margin: 0 auto;
+	margin: 0 !important;
     padding: 0;
-    width: 89.5%;
+    width: 100%;
     border-top: 1px solid #DDD;
 }
 
