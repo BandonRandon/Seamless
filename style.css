@@ -234,7 +234,8 @@ a:hover {
 }
 	
 p {
-	margin:0 0 1.5em 0
+	margin:0 0 15px 0
+	margin:0 0 1.5rem 0
 }
 
 .clear {
@@ -324,7 +325,8 @@ table caption {
 
 table th {
 	font-weight: bold;
-	padding: 0.25em 2%;
+	padding: 2.5px 2%;
+	padding: 0.25rem 2%;
 	border-top:1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 	border-right: 1px solid #e0e0e0;
@@ -336,7 +338,8 @@ table {
 }
 
 td {
-	padding: 0.25em 2%;
+	padding: 2.5px 2%;;
+	padding: 0.25rem 2%;
 	color: #444;
 	border-bottom: 1px solid #e0e0e0;
 	border-right: 1px solid #e0e0e0;
@@ -354,7 +357,8 @@ ul {
 }
 
 ul ul {
-	margin:0.25em 0 0.25em .5em;
+	margin: 2.5px 0 2.5px 5px;
+	margin: 0.25rem 0 0.25rem .5rem;
 }
 
 ol {
@@ -362,11 +366,13 @@ ol {
 }
 
 ol ol {
-	margin: 0.25em 0 0.25em .5em;
+	margin: 2.5px 0 2.5px 5px;
+	margin: 0.25rem 0 0.25rem .5rem;
 }
 
 dl {
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 0 15px 15px;
+	margin: 0 0 1.5rem 1.5rem;
 }
 
 dl dt {
@@ -374,7 +380,8 @@ dl dt {
 }
 
 dl dd {
-	margin: 0 0 0.25em 0.625em;
+	margin: 0 0 2.5px 6.25px;
+	margin: 0 0 0.25rem 0.625rem;
 	padding: 0;
 	font-size: 13px;
     font-size: 1.3rem;
@@ -385,8 +392,10 @@ dl dd {
 
 blockquote {
 	overflow: hidden;
-	margin: 0 0 1.5em 0;
-	padding: 1.5em;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
+	padding: 15px;
+	padding: 1.5rem;
 	font-size: 14px;
     font-size: 1.4rem;
 	background: #F9F9F9;
@@ -401,13 +410,15 @@ blockquote blockquote {
 /* code */
 
 code {
-	padding: 0 0.25em;
+	padding: 0 2.5px;
+	padding: 0 0.25rem;
 	color: #555;
 	background: #e6e6e6;
 }
 
 pre {
-	padding: 1.5em;
+	padding: 15px;
+	padding: 1.5rem;
 	color: #555;
 	background: #efefef;
 	border: 1px solid #dfdfdf;
@@ -438,25 +449,29 @@ textarea {
 .left, 
 .alignleft {
 	float: left;
-	margin: 0 1.5em 0 0;
+	margin: 0 15px 0 0;
+	margin: 0 1.5rem 0 0;
 }
 
 .right, 
 .alignright {
 	float: right;
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 15px;
+	margin: 0 0 0 1.5rem;
 }
 
 .center, 
 .aligncenter {
 	display: block;
-	margin: 0 auto 1.5em auto !important;
+	margin: 0 auto 15px auto !important;
+	margin: 0 auto 1.5rem auto !important;
 }
 
 .block, 
 .alignnone {
 	display: block;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 }
 
 .clear {
@@ -505,7 +520,8 @@ img.wp-post-image {
 
 .gallery {
 	overflow: hidden;
-	margin: 0 0 -1.5em 0;
+	margin: 0 0 -15px 0;
+	margin: 0 0 -1.5rem 0;
 }
 
 .gallery a {
@@ -514,7 +530,8 @@ img.wp-post-image {
 
 .gallery-item {
 	overflow: hidden;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 }
 
 .gallery-icon {
@@ -523,7 +540,8 @@ img.wp-post-image {
 
 .gallery img {
 	margin: 0;
-	padding: 0.125em;
+	padding: 1.25px;
+	padding: 0.125rem;
 	border: none;
 }
 
@@ -537,7 +555,8 @@ img.wp-post-image {
 
 .wp-caption {
 	overflow: hidden;
-	padding: 0.75em 0.5em;
+	padding: 7.5px 5px;
+	padding: 0.75rem 0.5rem;
 	background: #f9f9f9;
 	border: 1px solid #ccc;
 }
@@ -545,13 +564,15 @@ img.wp-post-image {
 .wp-caption img {
 	display: block;
 	max-width: 98%;
-	margin: 0 auto 0.625em auto;
+	margin: 0 auto 6.25px auto;
+	margin: 0 auto 0.625rem auto;
 	padding: 1%;
 	border: none;
 }
 
 .wp-caption .wp-caption-text {
-	margin: 0 0.25em;
+	margin: 0 2.5px;
+	margin: 0 0.25rem;
 	text-align: right;
 }
 
@@ -638,8 +659,10 @@ input[type="submit"].toggled-on {
 /* Search form */
 .s {
 	float: left;
-	width: 13em;
-	margin:0 1.5em 0 0;
+	width: 130px;
+	width: 13rem;
+	margin: 0 15px 0 0;
+	margin:0 1.5rem 0 0;
 }
 
 .searchform label,
@@ -652,12 +675,12 @@ input[type="submit"].toggled-on {
 	float: left;
 	width: 65%;
 	height: 32px;
-	height: 2rem;
-	margin:0;
+	height: 3.2rem;
+	margin: 0;
 	padding: 6px 10px;
-	padding: 0.375rem 0.625rem;
+	padding: 0.6rem 1.0rem;
 	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 1.2rem;
 	color: #aaa;
 	border: 1px solid #dfdfdf;
 	border-top-left-radius: 15px;
@@ -687,9 +710,9 @@ input[type="submit"].toggled-on {
 	float:left;
 	border-left: none;
 	height: 32px;
-	height: 2rem;
+	height: 3.2rem;
 	padding: 6px 10px;
-	padding: 0.375rem 0.625rem;
+	padding: 0.6rem 1.0rem;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	border-top-right-radius: 15px;
@@ -708,7 +731,8 @@ input[type="submit"].toggled-on {
 	overflow: hidden;
 	clear: both;
 	margin: 0 auto;
-	padding: 2.0em 2.5em;
+	padding: 20px 25px;
+	padding: 2.0rem 2.5rem;
 }	
 	
 /* header */	
@@ -722,14 +746,15 @@ input[type="submit"].toggled-on {
 #header .wrap{
 	clear: both;
 	margin: 0 auto;
-	padding: 1.5em 2.5em;
+	padding: 15px 25px;
+	padding: 1.5rem 2.5rem;
 	overflow: visible;
 }
 
 #branding {
 	clear: left;
 	overflow: hidden;
-	float:left;
+	float: left;
 	background: none;
 	display: block;
 	margin: 0;	
@@ -782,7 +807,8 @@ input[type="submit"].toggled-on {
 }
 		
 #sidebar-header .entry-title {
-	font-size: 1.5em;
+	font-size: 15px;
+	font-size: 1.5rem;
 }
 		
 /* Small menu */
@@ -790,7 +816,8 @@ input[type="submit"].toggled-on {
 .menu-toggle {
 	cursor: pointer;
 	display: inline-block;
-	margin: 0 1.5em;
+	margin: 0 15px;
+	margin: 0 1.5rem;
 }
 
 .main-small-navigation,
@@ -834,7 +861,8 @@ input[type="submit"].toggled-on {
 	overflow: hidden;
 	margin: 0 auto;
 	background: none;
-	padding: 0.5em 0;
+	padding: 5px 0;
+	padding: 0.5rem 0;
 	width: inherit;
 	text-align: center;
 }
@@ -842,16 +870,11 @@ input[type="submit"].toggled-on {
 	
 }
 
-
-
-
 /* end-splash */
 
 
 
 /* main-menu */
-
-
 
 /*
 Original Author: Craig Erskine
@@ -859,11 +882,13 @@ Description: Dynamic Menu System - Horizontal/Vertical
 Adapted to Happy theme in various ways
 http://qrayg.com/experiment/cssmenus/
 */
+
 .secondary-navigation {
 	clear: both;
 	display: block;
 	text-align: left;
-	padding: 0 2.5em;
+	padding: 0 25px;
+	padding: 0 2.5rem;
 }
 .secondary-navigation .wrap {
 	margin: 0 auto;
@@ -908,7 +933,8 @@ http://qrayg.com/experiment/cssmenus/
 .secondary-navigation ul ul li a { 
 	width: 100%; 
 	display: block;
-    padding: 0.5em 0.8em;
+	padding: 5px 8px;
+    padding: 0.5rem 0.8rem;
 }
 
 /* Root Menu */
@@ -918,7 +944,8 @@ http://qrayg.com/experiment/cssmenus/
 	text-decoration: none;
 	padding: 10px 0;	
 	padding: 1.0rem 0;
-	margin-right: 2em;
+	margin-right: 20px;
+	margin-right: 2rem;
 	height: 1%;
 
 }
@@ -1033,7 +1060,8 @@ http://qrayg.com/experiment/cssmenus/
 	width: 150px;
 	height: 150px;
 	*/
-	margin: 0 0 0.5em 1em;
+	margin: 0 0 5px 10px;
+	margin: 0 0 0.5rem 1rem;
 }
 
 .format-gallery.hentry .thumbnail {
@@ -1042,7 +1070,8 @@ http://qrayg.com/experiment/cssmenus/
 		0 0 0 1px #ccc,
 		5px 5px 0 0 #fff,
 		5px 5px 0 1px #ccc;
-	margin: 0 0 1em 1em;
+	margin: 0 0 10px 10px;
+	margin: 0 0 1rem 1rem;
 }
 .format-aside {
 	padding: 15px;
@@ -1055,14 +1084,17 @@ http://qrayg.com/experiment/cssmenus/
 
 .entry-title {
     font-weight: bold;
-	margin: 0 0 0.5em 0;
+	margin: 0 0 0.5px 0;
+	margin: 0 0 0.5rem 0;
 }
 .singular .entry-title {
-	margin: 0 0 0.5em 0;
+	margin: 0 0 5px 0;
+	margin: 0 0 0.5rem 0;
 }
 .singular-page .entry-title, 
 .singular-attachment .entry-title {
-	margin: 0 0 1.0em;
+	margin: 0 0 10px;
+	margin: 0 0 1.0rem;
 }
 	
 .entry-title a {
@@ -1072,7 +1104,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .byline {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 	font-size: 12px;
 	font-size: 1.2rem;
 }
@@ -1082,7 +1115,8 @@ http://qrayg.com/experiment/cssmenus/
 	text-decoration: underline;
 }
 .singular .byline {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 }
 
 .entry-content {
@@ -1101,7 +1135,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .loop-meta {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 	font-size: 16px;
 	font-size: 1.6rem;
 }
@@ -1120,15 +1155,18 @@ http://qrayg.com/experiment/cssmenus/
 }
 .loop-meta .avatar {
 	float: left;
-	width: 3.1875em;
-	height: 3.1875em;
-	margin: 0 1.5em 0.5em 0;
+	width: 31.875px;
+	width: 3.1875rem;
+	height: 31.875px;
+	height: 3.1875rem;
+	margin: 0 15px 5px 0;
+	margin: 0 1.5rem 0.5rem 0;
 	padding: 0;
 }
 
 .singular .loop-nav {
 	font-size: 16px
-	font-size: 1rem;
+	font-size: 1.6rem;
 }
 .singular .loop-nav a {
 	font-style: italic;
@@ -1139,7 +1177,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 .page-links a {
 	display: inline-block;
-	padding: 0.25em 0.25em;
+	padding: 2.5px;
+	padding: 0.25rem;
 }
 .page-links a:hover {
 
@@ -1150,8 +1189,10 @@ http://qrayg.com/experiment/cssmenus/
 }
 .pagination .page-numbers {
 	display: inline-block;
-	padding: 0.25em 0.75em;
-	margin: 0 0.75em 0 0;	
+	padding: 2.5px 7.5px;
+	padding: 0.25rem 0.75rem;
+	margin: 0 7.5px 0 0;	
+	margin: 0 0.75rem 0 0;
 }
 .pagination a.page-numbers {
 }
@@ -1162,12 +1203,11 @@ http://qrayg.com/experiment/cssmenus/
 
 }
 	
-	
-	
 .breadcrumbs {
 	font-size: 13px;
 	font-size: 1.3rem;
-	margin:0 0 2.5em;
+	margin: 0 0 25px;
+	margin: 0 0 2.5rem;
 }
 .breadcrumbs a {
 	text-decoratin: none;
@@ -1176,18 +1216,18 @@ http://qrayg.com/experiment/cssmenus/
 }
 .breadcrumbs .trail-before {
 	display: inline-block;
-	margin: 0 0.375em 0 0;
+	margin: 0 3.75px 0 0;
+	margin: 0 0.375rem 0 0;
 }
 .breadcrumbs .trail-end {
 	font-style: italic;
 }
 .breadcrumbs .sep {
 	display: inline-block;
-	margin: 0 .375em;
+	margin: 0 3.75px;
+	margin: 0 .375rem;
 }
 
-
-	
 /* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
 
 .layout-1c #content {
@@ -1221,7 +1261,8 @@ http://qrayg.com/experiment/cssmenus/
 .layout-default #sidebar-secondary {
 	clear: right;
 	float: right;
-	margin: 1.5em 0;
+	margin: 150x 0;
+	margin: 1.5rem 0;
 }
 
 .layout-2c-r #content {
@@ -1242,7 +1283,8 @@ http://qrayg.com/experiment/cssmenus/
 .layout-3c-l #sidebar-secondary {
 	clear: none;
 	float: left;
-	margin:0 0 0 1.5em;
+	margin: 0 0 0 15px;
+	margin: 0 0 0 1.5rem;
 }
 .layout-3c-l #sidebar-secondary {
 	padding: 0;
@@ -1256,7 +1298,8 @@ http://qrayg.com/experiment/cssmenus/
 .layout-3c-r #sidebar-secondary {
 	clear: none;
 	float: left;
-	margin:0 1.5em 0 0;
+	margin: 0 15px 0 0;
+	margin:0 1.5rem 0 0;
 }
 .layout-3c-r #sidebar-secondary {
 	border: none;
@@ -1278,19 +1321,18 @@ http://qrayg.com/experiment/cssmenus/
 	
 	
 /* end-content-area */	
-	
-
 
 /* general sidebars */
 	
 .sidebar .widget-title {
-	margin:0 0 0.5em;
+	margin: 0 0 5px;
+	margin: 0 0 0.5rem;
 }
 
 .sidebar .widget ul {
 	list-style: none;
 	padding: 0 16px;
-	padding: 0 1rem;
+	padding: 0 1.6rem;
 }
 .sidebar .widget > ul {
 	padding: 0;
@@ -1317,7 +1359,8 @@ http://qrayg.com/experiment/cssmenus/
 	
 #sidebar-after-singular {
 	overflow: hidden;
-	margin: 1.5em 0;
+	margin: 15px 0;
+	margin: 1.5rem 0;
 }
 #sidebar-after-singular .widget-title {
 }
@@ -1344,7 +1387,7 @@ http://qrayg.com/experiment/cssmenus/
 #footer .wrap {
 	margin: 0 auto;
     padding: 0;
-   // width: 89.5%;
+    width: 89.5%;
     border-top: 1px solid #DDD;
 }
 
@@ -1418,7 +1461,7 @@ http://qrayg.com/experiment/cssmenus/
 	display: block;
 	text-decoration: none;
 	padding: 16px 24px;	
-	padding: 1rem 1.5rem;
+	padding: 1.6rem 2.4rem;
 	height: 1%;
 }
 
@@ -1454,7 +1497,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 #sidebar-subsidiary .widget-title {
-	margin: 0 0 0.5em 0;
+	margin: 0 0 5px 0;
+	margin: 0 0 0.5rem 0;
 	padding: 0;
 }
 
@@ -1511,10 +1555,14 @@ http://qrayg.com/experiment/cssmenus/
 
 .comment-list .avatar {
 	float: left;
-	width: 3em;
-	height: 3em;
-	margin: 0 1em 0.5em 0;
-	padding: 0.125em;
+	width: 30px;
+	width: 3rem;
+	height: 30px;
+	height: 3rem;
+	margin: 0 10px 5px 0;
+	margin: 0 1rem 0.5rem 0;
+	padding: 1.25px;
+	padding: 0.125rem;
 	border: 1px solid #eee;
 }
 .comment-author.vcard {
@@ -1524,7 +1572,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .comment-meta {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 	font-size: 12px;
     font-size: 1.2rem;
 }
@@ -1547,17 +1596,17 @@ http://qrayg.com/experiment/cssmenus/
 
 .comment-content ol {
 	list-style: decimal inside;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 15px;
+	margin: 0 0 1.5rem 1.5rem;
 	border-top: none;
-	margin: 0 0 1.5em 1.5em;
 	padding: 0;
 }
 
 .comment-content ul {
 	list-style: square inside;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 15px;
+	margin: 0 0 1.5rem 1.5rem;
 	border-top: none;
-	margin: 0 0 1.5em 1.5em;
 	padding: 0;
 }
 
@@ -1600,14 +1649,16 @@ http://qrayg.com/experiment/cssmenus/
 
 #respond #submit {
 	float: left;
-	margin:0 0 1.5em;
+	margin: 0 0 15px;
+	margin: 0 0 1.5rem;
 }
 
 /* gravity forms */
 
 .gform_body {
 	width:100%;
-	margin:0.5em 0 0 0;
+	margin: 5px 0 0 0;
+	margin: 0.5rem 0 0 0;
 }
 
 .gform_body ul {
@@ -1620,42 +1671,51 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .gfield {
-	margin:0 0 0.25em;
+	margin: 0 0 2.5px;
+	margin:0 0 0.25rem;
 }
 
 .gfield input {
-	font-size:0.875em;
-	padding:0.25em;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 2.5px;
+	padding: 0.25rem;
 	border:1px solid #999;
 }
 
 .ginput_left {
 	width:48%;
 	float:left;
-	margin:0 0 0.25em;
+	margin: 0 0 2.5px;
+	margin:0 0 0.25rem;
 }
 
 .ginput_right { 
 	width:48%;
 	float:right;
-	margin:0 0 0.25em;
+	margin: 0 0 2.5px;
+	margin:0 0 0.25rem;
 
 }
 
 .ginput_left label, 
 .ginput_right label {
-	font-size:0.875em;
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .ginput_left input, 
 .ginput_right input {
-	margin:0 0 0.125em;
+	margin: 0 0 1.25px;
+	margin: 0 0 0.125rem;
 }
 
 .gform_body textarea {
 	width:100%;
-	padding:0.125em 0 0 0.125em;
-	font-size: 0.875em;
+	padding: 1.25px 0 0 1.25px;
+	padding: 0.125rem 0 0 0.125rem;
+	font-size: 12px;
+	font-size: 1.2rem;
 	border:1px solid #999;
 }    
 
@@ -1688,6 +1748,7 @@ http://qrayg.com/experiment/cssmenus/
 	#sidebar-header {
 		clear:both;
 		width: 100%;
+		margin-top: 10px;
 		margin-top: 1rem;
 		float: left;
 	}
@@ -1700,6 +1761,7 @@ http://qrayg.com/experiment/cssmenus/
 	
 	.main-small-navigation, 
 	.main-small-secondary-navigation {
+		padding: 10px;
 		padding: 1rem;
 	}
 	.main-small-navigation, 
@@ -1808,9 +1870,11 @@ http://qrayg.com/experiment/cssmenus/
 
 	.comment-list .avatar {
 		float: left;
-		width: 2.5em;
-		height: 2.5em;
-		margin: 0 4px 4px 0; 
+		width: 25px;
+		width: 2.5rem;
+		height: 25px;
+		height: 2.5rem;
+		margin: 0 4px 2px 0 4px; 
 		margin: 0.4rem 0.2rem 0 0.4rem;
 	}
 	
