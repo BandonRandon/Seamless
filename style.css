@@ -232,10 +232,14 @@ a:hover {
 	color: #004466;
 	text-decoration: underline;
 }
+blockquote p:last-child , .format-aside p:last-child , .format-quote p:last-child  {
+	margin-bottom: 0;
+}
 	
 p {
-	margin:0 0 15px 0
-	margin:0 0 1.5rem 0
+	margin:0 0 15px 0;
+	margin:0 0 1.5rem 0;
+	line-height: 1.8;
 }
 
 .clear {
@@ -249,7 +253,7 @@ h4,
 h5, 
 h6 {
     margin: 0 0 5px 0;
-	margin: 0 0 .5rem 0;
+	margin: 1.5rem 0;
 	padding: 0;
 	font-weight: normal;
 } /* margin and padding and font-weight set to override browser defaults */
@@ -369,10 +373,17 @@ ol ol {
 	margin: 2.5px 0 2.5px 5px;
 	margin: 0.25rem 0 0.25rem .5rem;
 }
-
+li {
+	margin: 0 0 0 25px;
+	margin: 0 0 0 2.5rem;
+	line-height: 1.8;
+}
 dl {
 	margin: 0 0 15px 15px;
 	margin: 0 0 1.5rem 1.5rem;
+}
+dt {
+	font-weight: bold;
 }
 
 dl dt {
@@ -380,11 +391,11 @@ dl dt {
 }
 
 dl dd {
-	margin: 0 0 2.5px 6.25px;
-	margin: 0 0 0.25rem 0.625rem;
+	margin: 0 0 2.5px 25px;
+	margin: 0 0 0.25rem 2.5rem;
 	padding: 0;
-	font-size: 13px;
-    font-size: 1.3rem;
+	font-size: 14px;
+    font-size: 1.4rem;
 	color: #444;
 }
 
@@ -413,20 +424,30 @@ code {
 	padding: 0 2.5px;
 	padding: 0 0.25rem;
 	color: #555;
-	background: #e6e6e6;
+	background: #F9F9F9;
 }
 
 pre {
 	padding: 15px;
 	padding: 1.5rem;
+	margin: 15px 0;
+	margin: 1.5rem 0;
 	color: #555;
-	background: #efefef;
+	background: #F9F9F9;
 	border: 1px solid #dfdfdf;
 }
 
 pre code {
 	padding: 0;
 	background: transparent;
+}
+
+/* Address */
+address {
+	display: block;
+	line-height: 1.7;
+	margin: 0 0 17px;
+	margin: 0 0 1.7rem;
 }
 
 /* basic forms */
@@ -720,8 +741,8 @@ input[type="submit"].toggled-on {
 	overflow: hidden;
 	clear: both;
 	margin: 0 auto;
-	padding: 20px 30px;
-	padding: 2.0rem 3rem;
+	padding: 20px 40px;
+	padding: 2.0rem 4rem;
 }	
 	
 /* header */	
@@ -735,8 +756,8 @@ input[type="submit"].toggled-on {
 #header .wrap{
 	clear: both;
 	margin: 0 auto;
-	padding: 15px 30px;
-	padding: 1.5rem 3rem;
+	padding: 25px 40px 10px 40px;
+	padding: 2.5rem 4rem 1rem 4rem;
 	overflow: visible;
 }
 
@@ -807,6 +828,8 @@ input[type="submit"].toggled-on {
 	display: inline-block;
 	margin: 0 15px;
 	margin: 0 1.5rem;
+	padding: 5px 35px;
+	padding: 0.5rem 3.5rem;
 }
 
 .main-small-navigation,
@@ -841,8 +864,8 @@ http://qrayg.com/experiment/cssmenus/
 	clear: both;
 	display: block;
 	text-align: left;
-	padding: 0 30px;
-	padding: 0 3rem;
+	padding: 0 40px;
+	padding: 0 4rem;
 }
 .primary-navigation .wrap {
 	margin: 0 auto;
@@ -883,12 +906,13 @@ http://qrayg.com/experiment/cssmenus/
 	float: left; 
 	display: inline; 
 	position: relative; 
+	margin: 0;
 }
 .primary-navigation ul ul li a { 
-	width: 100%; 
+	width: 200px; 
 	display: block;
-	padding: 5px 8px;
-    padding: 0.5rem 0.8rem;
+	padding: 7.5px 8px;
+    padding: 0.75rem 0.8rem;
 }
 
 /* Root Menu */
@@ -988,8 +1012,8 @@ http://qrayg.com/experiment/cssmenus/
 .hentry {
 	margin: 0 0 28px 0;
 	margin: 0 0 2.8rem 0;
-	padding: 0 0 28px 0;
-	padding: 0 0 2.8rem 0;
+	padding: 0 0 8px 0;
+	padding: 0 0 0.8rem 0;
 }
 .singular .hentry {
 	margin: 0;
@@ -1038,12 +1062,12 @@ http://qrayg.com/experiment/cssmenus/
 
 .entry-title {
     font-weight: bold;
-	margin: 0 0 0.5px 0;
-	margin: 0 0 0.5rem 0;
+	margin: 0 0 12px 0;
+	margin: 0 0 1.2rem 0;
 }
 .singular .entry-title {
-	margin: 0 0 5px 0;
-	margin: 0 0 0.5rem 0;
+	margin: 0 0 8.5px 0;
+	margin: 0 0 0.85rem 0;
 }
 .singular-page .entry-title, 
 .singular-attachment .entry-title {
@@ -1122,11 +1146,22 @@ http://qrayg.com/experiment/cssmenus/
 .singular .loop-nav {
 	font-size: 16px
 	font-size: 1.6rem;
+	line-height: 1;
+	margin: 10px 0 20px 0;
+	margin: 1rem 0 2rem 0;
+	overflow: hidden;
 }
 .singular .loop-nav a {
 	font-style: italic;
 }
-
+.loop-nav .next {
+	float: right;
+	text-align: right;
+}
+.loop-nav .previous {
+	float: left;
+	text-align: left;
+}
 .page-links {
 	clear: both;
 	margin: 10px 0;
@@ -1163,8 +1198,8 @@ http://qrayg.com/experiment/cssmenus/
 .breadcrumbs {
 	font-size: 13px;
 	font-size: 1.3rem;
-	margin: 0 0 25px;
-	margin: 0 0 2.5rem;
+	margin: 0 0 7.5px;
+	margin: 0 0 .75rem;
 }
 .breadcrumbs a {
 	text-decoratin: none;
@@ -1276,11 +1311,14 @@ http://qrayg.com/experiment/cssmenus/
 	border: none;
 }
 	
-	
 /* end-content-area */	
 
 /* general sidebars */
-	
+
+.widget {
+	padding: 0 0 20px 0;
+	padding: 0 0 2.0rem 0;
+}
 .sidebar .widget-title {
 	margin: 0 0 5px;
 	margin: 0 0 0.5rem;
@@ -1288,8 +1326,10 @@ http://qrayg.com/experiment/cssmenus/
 
 .sidebar .widget ul {
 	list-style: none;
-	padding: 0 16px;
-	padding: 0 1.6rem;
+	padding: 0;
+}
+.sidebar .widget li {
+	padding: 0;
 }
 .sidebar .widget > ul {
 	padding: 0;
@@ -1404,7 +1444,8 @@ http://qrayg.com/experiment/cssmenus/
 .subsidiary-navigation ul li { 
 	float: left; 
 	display: inline; 
-	position: relative; 
+	position: relative;
+	margin: 0; 
 }
 .subsidiary-navigation ul ul li { 
 	width: 100%; 
@@ -1417,8 +1458,10 @@ http://qrayg.com/experiment/cssmenus/
 	float: left;
 	display: block;
 	text-decoration: none;
-	padding: 10px 14px;	
-	padding: 1.0rem 1.4rem;
+	padding: 10px 0;	
+	padding: 1.0rem 0;
+	margin-right: 20px;
+	margin-right: 2rem;
 	height: 1%;
 }
 
@@ -1427,7 +1470,7 @@ http://qrayg.com/experiment/cssmenus/
 .subsidiary-navigation ul a:hover,
 .subsidiary-navigation ul li:hover a,
 .subsidiary-navigation ul li.iehover a {
-	background: #e7e7e7;
+	COLOR: #000;
 }
 
 
@@ -1512,10 +1555,10 @@ http://qrayg.com/experiment/cssmenus/
 
 .comment-list .avatar {
 	float: left;
-	width: 30px;
-	width: 3rem;
-	height: 30px;
-	height: 3rem;
+	width: 45px;
+	width: 4.5rem;
+	height: 45px;
+	height: 4.5rem;
 	margin: 0 10px 5px 0;
 	margin: 0 1rem 0.5rem 0;
 	padding: 1.25px;
@@ -1533,6 +1576,7 @@ http://qrayg.com/experiment/cssmenus/
 	margin: 0 0 1.5rem 0;
 	font-size: 12px;
     font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .comment-meta .comment-author cite, 
@@ -1553,16 +1597,16 @@ http://qrayg.com/experiment/cssmenus/
 
 .comment-content ol {
 	list-style: decimal inside;
-	margin: 0 0 15px 15px;
-	margin: 0 0 1.5rem 1.5rem;
+	margin: 0 0 15px 22.5px;
+	margin: 0 0 1.5rem 2.25rem;
 	border-top: none;
 	padding: 0;
 }
 
 .comment-content ul {
 	list-style: square inside;
-	margin: 0 0 15px 15px;
-	margin: 0 0 1.5rem 1.5rem;
+	margin: 0 0 15px 22.5px;
+	margin: 0 0 1.5rem 2.25rem;
 	border-top: none;
 	padding: 0;
 }
@@ -1688,6 +1732,8 @@ http://qrayg.com/experiment/cssmenus/
 @media (min-width: 30em) and (max-width: 45.49em) {
 
 	#container { width: 98%; }
+
+	#branding, #site-title { float: none; text-align: center;}
 	
 	#content, 
 	.layout-1c #content, 
@@ -1755,6 +1801,8 @@ http://qrayg.com/experiment/cssmenus/
 
 	#container,
 	#footer .wrap { width: 98%; }
+
+	#branding, #site-title { float: none; text-align: center;}
 	
 	#content, 	
 	.layout-1c #content, 

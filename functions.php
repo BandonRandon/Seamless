@@ -51,7 +51,6 @@ function seamless_theme_setup() {
 	add_theme_support( 'hybrid-core-widgets' );
 	add_theme_support( 'hybrid-core-shortcodes' );
 	add_theme_support( 'hybrid-core-theme-settings', array( 'about', 'footer' ) );
-	add_theme_support( 'hybrid-core-drop-downs' );
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
 	/* Add theme support for framework extensions. */
@@ -87,7 +86,7 @@ function seamless_theme_setup() {
 	add_action( 'wp_enqueue_scripts', 'seamless_scripts' );
 
     /* Enqueue scripts (and related stylesheets) */
-	add_action( 'wp_print_styles', 'load_fonts' );
+	add_action( 'wp_print_styles', 'seamless_fonts' );
 
 	/* Set the content width. */
 	hybrid_set_content_width( 600 );
@@ -182,12 +181,12 @@ function seamless_scripts() {
  *
  */
 
-function load_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans');
+function seamless_fonts() {
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400');
             wp_enqueue_style( 'googleFonts');
         }
  
-add_action('wp_print_styles', 'load_fonts');
+add_action('wp_print_styles', 'seamless_fonts');
 
 /**
  * Returns the number of images attached to the current post in the loop.
