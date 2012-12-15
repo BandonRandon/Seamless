@@ -302,11 +302,10 @@ h6 {
 
 /* increase the size of main title h1s */
 
-#site-title,
 .loop-title,
 .singular .hfeed .entry-title {
-	font-size: 26px;
-	font-size: 2.6rem; 
+	font-size: 21px;
+	font-size: 2.1rem; 
 }
 
 
@@ -776,6 +775,8 @@ input[type="submit"].toggled-on {
     margin: 0 0 5px 0;
     margin: 0 0 .5rem 0;
     font-weight: bold;
+    font-size: 26px;
+	font-size: 2.6rem; 
 }
 
 #site-title a {
@@ -1071,8 +1072,8 @@ http://qrayg.com/experiment/cssmenus/
 }
 .singular-page .entry-title, 
 .singular-attachment .entry-title {
-	margin: 0 0 10px;
-	margin: 0 0 1.0rem;
+	margin: 0 0 15px;
+	margin: 0 0 1.5rem;
 }
 	
 .entry-title a {
