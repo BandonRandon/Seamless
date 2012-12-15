@@ -1147,8 +1147,8 @@ http://qrayg.com/experiment/cssmenus/
 	font-size: 16px
 	font-size: 1.6rem;
 	line-height: 1;
-	margin: 10px 0 20px 0;
-	margin: 1rem 0 2rem 0;
+	margin: 20px 0 40px 0;
+	margin: 2rem 0 4rem 0;
 	overflow: hidden;
 }
 .singular .loop-nav a {
@@ -1198,13 +1198,18 @@ http://qrayg.com/experiment/cssmenus/
 .breadcrumbs {
 	font-size: 13px;
 	font-size: 1.3rem;
-	margin: 0 0 7.5px;
-	margin: 0 0 .75rem;
+	margin: 5px 0 15px 0;
+	margin: .5rem 0 1.5rem 0;
 }
 .breadcrumbs a {
+	color: #777;
+	border-bottom: 1px dotted #AAA;
 	text-decoratin: none;
 }
 .breadcrumbs a:hover {
+	color: black;
+	border-bottom: 1px dotted #333;
+	text-decoration: none;
 }
 .breadcrumbs .trail-before {
 	display: inline-block;

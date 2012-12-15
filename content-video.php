@@ -1,8 +1,8 @@
 <?php
 /**
- * Content Template for the "Image" post format
+ * Content Template for the "Video" post format
  *
- * Displays the "Image" post format content to be called by get_template_part() in the various templates
+ * Displays the "Video" post format content to be called by get_template_part() in the various templates
  *
  * @package Seamless
  * @subpackage Template
