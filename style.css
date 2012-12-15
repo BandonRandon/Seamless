@@ -85,9 +85,14 @@ textarea {
 	line-height: 1.5;
 }
 
-input, 
+input,
+button,
 textarea {
 	max-width: 98%;
+	line-height: normal;
+	border: 1px solid #CCC;
+	padding: 4px;
+	padding: .4rem;
 }
 
 body {
@@ -575,8 +580,8 @@ img.wp-post-image {
 
 .wp-caption {
 	overflow: hidden;
-	padding: 7.5px 5px;
-	padding: 0.75rem 0.5rem;
+	padding: 3.5px 2px;
+	padding: .35rem 0.2rem;
 	background: #f9f9f9;
 	border: 1px solid #ccc;
 }
@@ -593,7 +598,9 @@ img.wp-post-image {
 .wp-caption .wp-caption-text {
 	margin: 0 2.5px;
 	margin: 0 0.25rem;
-	text-align: right;
+	text-align: center;
+	font-style: 12px;
+	font-style: 1.2rem;
 }
 
 /* Make sure videos and embeds fit their containers */
@@ -868,6 +875,9 @@ http://qrayg.com/experiment/cssmenus/
 	padding: 0 40px;
 	padding: 0 4rem;
 }
+#menu-primary li.current-menu-item a {
+	font-weight: bold;
+}
 .primary-navigation .wrap {
 	margin: 0 auto;
 	position: relative;
@@ -1103,10 +1113,10 @@ http://qrayg.com/experiment/cssmenus/
 
 .entry-meta {
 	clear: both;
-	margin: 10px 0;
-	margin: 1.0rem 0;
-	font-size: 12px;
-	font-size: 1.2rem;
+	padding: 10px 0;
+	padding: 1.0rem 0;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 .entry-meta a {
 }
@@ -1177,8 +1187,8 @@ http://qrayg.com/experiment/cssmenus/
 
 }
 .pagination.loop-pagination {
-	padding-bottom: 25px;
-	padding-bottom: 2.5rem;
+	padding-bottom: 30px;
+	padding-bottom: 3.0rem;
 }
 .pagination .page-numbers {
 	display: inline-block;
@@ -1199,8 +1209,8 @@ http://qrayg.com/experiment/cssmenus/
 .breadcrumbs {
 	font-size: 13px;
 	font-size: 1.3rem;
-	margin: 5px 0 15px 0;
-	margin: .5rem 0 1.5rem 0;
+	margin: 5px 0 20px 0;
+	margin: .5rem 0 2.0rem 0;
 }
 .breadcrumbs a {
 	color: #777;
@@ -1259,8 +1269,6 @@ http://qrayg.com/experiment/cssmenus/
 .layout-default #sidebar-secondary {
 	clear: right;
 	float: right;
-	margin: 150x 0;
-	margin: 1.5rem 0;
 }
 
 .layout-2c-r #content {
@@ -1335,13 +1343,14 @@ http://qrayg.com/experiment/cssmenus/
 	padding: 0;
 }
 .sidebar .widget li {
-	margin: 0 0 0 15px;
-	margin: 0 0 0 1.5rem;
+	margin: 0;
 }
 .sidebar .widget > ul {
 	padding: 0;
 }
 .sidebar .widget ul li a {
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 .sidebar .widget ul li a:hover {
 
@@ -1356,7 +1365,7 @@ http://qrayg.com/experiment/cssmenus/
 /* #sidebar-secondary widget area */
 
 #sidebar-secondary {
-	padding: 2%;
+	padding: 0 2% 2% 2%;
 }
 
 /* #sidebar-after-singular widget area */	
@@ -1556,6 +1565,7 @@ http://qrayg.com/experiment/cssmenus/
 .comment-list li {
 	padding: 24px 24px 0 24px;
 	padding: 2.4rem 2.4rem 0 2.4rem;
+	margin: 0;
 	border: 1px solid #dfdfdf;
 	border-top: none;
 }
@@ -1784,18 +1794,19 @@ http://qrayg.com/experiment/cssmenus/
 	.layout-2c-r #sidebar-primary, 
 	.layout-2c-l #sidebar-primary, 
 	.layout-default #sidebar-primary {
-		width: 49%;
+		width: 100%;
 		float: left;
+		padding: 0;
 	}
 	.layout-2c-r #sidebar-secondary, 
 	.layout-2c-l #sidebar-secondary, 
 	.layout-default #sidebar-secondary {
-		width: 49%;
+		width: 100%;
 		float: left;
-		margin: 0 0 0 2%;
+		padding: 0;
 	}
 	#sidebar-subsidiary .widget {
-		width: 48%;
+		width: 100%;
 	}
 	.comment-list li {
 		padding: 8px 8px 0 8px;
