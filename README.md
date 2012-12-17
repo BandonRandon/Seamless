@@ -9,8 +9,7 @@ You can help by downloading this theme, testing it, and leaving feedback (in bot
 
 To Do
 -------
-* Convert all em values to rem values
-* Finish adding + styling all post formats (Aside, Image, Link, Gallery, Quote, Status)
+* Finish adding + styling all post formats (still issues with the Image post format)
 * Add support for custom headers
 * Clean up typograhpy/CSS (line-heights, font sizes, etc)
 * Clean up all php/html (Quadruple check every single file)
