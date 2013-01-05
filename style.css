@@ -1,11 +1,11 @@
-﻿/*
+/*
 Theme Name: Seamless
 Theme URI: http://seamlessthemes.com
 Description: A responsive parent theme built on top of Hybrid Core
 
 Author: James Geiger
 Author URI: http://seamlessthemes.com
-Version: 0.2
+Version: 0.1
 Tags: light, three-columns, two-columns, right-sidebar, left-sidebar, flexible-width, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
 
 License: GNU/GPL Version 2 or later
@@ -104,8 +104,7 @@ body {
 }
 
 #container {
-    max-width: 980px;
-	max-width: 98rem;
+	width: 98%;
 	margin: 0 auto;
 	background: #fff;
 	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3); 
@@ -535,10 +534,7 @@ img.wp-post-image {
 .layout-default .entry-content img,
 .layout-1c .entry-content img,
 .layout-2c-r .entry-content img,
-.layout-2c-l .entry-content img,
-.layout-3c-l .entry-content img, 
-.layout-3c-r .entry-content img, 
-.layout-3c-c .entry-content img {
+.layout-2c-l .entry-content img, {
 }
 
 /* galleries */
@@ -747,8 +743,8 @@ input[type="submit"].toggled-on {
 	overflow: hidden;
 	clear: both;
 	margin: 0 auto;
-	padding: 20px 40px;
-	padding: 2.0rem 4rem;
+	padding: 20px;
+	padding: 2.0rem;
 }	
 	
 /* header */	
@@ -762,25 +758,23 @@ input[type="submit"].toggled-on {
 #header .wrap{
 	clear: both;
 	margin: 0 auto;
-	padding: 25px 40px 10px 40px;
-	padding: 2.5rem 4rem 1rem 4rem;
+	padding: 25px 2z0px 10px 20px;
+	padding: 2.5rem 2rem 1rem 2rem;
 	overflow: visible;
 }
 
 #branding {
-	clear: left;
 	overflow: hidden;
-	float: left;
 	background: none;
 	display: block;
 	margin: 0;	
-	width: auto;
+	width: 100%;
 }
 
 #site-title { 
-	float: left;
-    margin: 0 0 5px 0;
-    margin: 0 0 .5rem 0;
+	text-align: center;
+    margin: 0 0 10px 0;
+    margin: 0 0 1rem 0;
     font-weight: bold;
     font-size: 26px;
 	font-size: 2.6rem; 
@@ -799,10 +793,12 @@ input[type="submit"].toggled-on {
 
 #site-description {
 	/* text-indent: -9999px; */
-	clear: left;
+	text-align: center;
 	font-size: 13px;
 	font-size: 1.3rem;
 	padding: 0;
+	margin: 15px 0;
+	margin: 1.5rem 0;
 }
 
 #sidebar-header {
@@ -1001,7 +997,7 @@ http://qrayg.com/experiment/cssmenus/
 /* content-area */
 
 #content {
-	width: 70%; /* standard 720px width */ 
+	width: 100%; /* standard 720px width */ 
 	margin: 0; 
 }
 
@@ -1250,23 +1246,18 @@ http://qrayg.com/experiment/cssmenus/
 .layout-2c-r #content,  
 .layout-default #content {
 	float: left;
-	width: 70%;
-}
-
-.layout-3c-l #content, 
-.layout-3c-r #content, 
-.layout-3c-c #content {
-	width: 40%;
+	width: 100%;
 }
 
 #sidebar-primary, 
 #sidebar-secondary {
-	width: 25%;
+	width: 100%;
+	padding: 2% 2% 0 2%;
 }
 
 .layout-2c-l #sidebar-primary, 
 .layout-default #sidebar-primary {
-	float: right;
+	float: left;
 }
 .layout-2c-l #sidebar-secondary, 
 .layout-default #sidebar-secondary {
@@ -1284,49 +1275,6 @@ http://qrayg.com/experiment/cssmenus/
 	float: left;
 	clear: left;
 }
-
-.layout-3c-l #content {
-	float: left;
-}
-.layout-3c-l #sidebar-primary, 
-.layout-3c-l #sidebar-secondary {
-	clear: none;
-	float: left;
-	margin: 0 0 0 15px;
-	margin: 0 0 0 1.5rem;
-}
-.layout-3c-l #sidebar-secondary {
-	padding: 0;
-	border: none;
-}
-
-.layout-3c-r #content {
-	float: right;
-}
-.layout-3c-r #sidebar-primary, 
-.layout-3c-r #sidebar-secondary {
-	clear: none;
-	float: left;
-	margin: 0 15px 0 0;
-	margin:0 1.5rem 0 0;
-}
-.layout-3c-r #sidebar-secondary {
-	border: none;
-}
-
-.layout-3c-c #content {
-	float: left;
-	margin:0 0 0 30%;
-}
-.layout-3c-c #sidebar-primary {
-	float: left;
-	margin:0 0 0 -70%;
-}
-.layout-3c-c #sidebar-secondary {
-	clear: none;
-	float: right;
-	border: none;
-}
 	
 /* end-content-area */	
 
@@ -1337,13 +1285,16 @@ http://qrayg.com/experiment/cssmenus/
 	padding: 0 0 2.0rem 0;
 }
 .sidebar .widget-title {
-	margin: 0 0 5px;
-	margin: 0 0 0.5rem;
+	font-weight: bold;
+	margin: 0 0 10px;
+	margin: 0 0 1.0rem;
 }
 
 .sidebar .widget ul {
 	list-style: none;
 	padding: 0;
+	margin-left: 5px;
+	margin-left: .5rem;
 }
 .sidebar .widget li {
 	margin: 0;
@@ -1355,21 +1306,15 @@ http://qrayg.com/experiment/cssmenus/
 	font-size: 13px;
 	font-size: 1.3rem;
 }
+.sidebar .widget ul ul li {
+	margin-left: 10px;
+	margin-left: 1.0rem;
+}
 .sidebar .widget ul li a:hover {
 
 }
 
-/* #sidebar-primary widget area */
-
-#sidebar-primary {
-	padding: 2%;
-}
-
 /* #sidebar-secondary widget area */
-
-#sidebar-secondary {
-	padding: 0 2% 2% 2%;
-}
 
 /* #sidebar-after-singular widget area */	
 	
@@ -1536,22 +1481,21 @@ http://qrayg.com/experiment/cssmenus/
 #footer .copyright {
 	float: left;
 	text-align: left;
-	width: 49%;
+	width: 100%;
 	padding: 15px 20px;
 	padding: 1.5em 0;
 	margin: 0;
 }
 
 #footer .credit {
-	float: right;
-	text-align: right;
-	width: 49%;
+	float: left;
+	text-align: left;
+	width: 100%;
 	padding: 15px 20px;
 	padding: 1.5em 0;
 	margin: 0;
-	
-	
 }
+
 #footer .copyright a, 
 #footer .credit a {
 }  
@@ -1564,10 +1508,9 @@ http://qrayg.com/experiment/cssmenus/
 	border-top: 1px solid #dfdfdf;
 	padding: 0;
 }
-
 .comment-list li {
-	padding: 24px 24px 0 24px;
-	padding: 2.4rem 2.4rem 0 2.4rem;
+	padding: 8px 8px 0 8px;
+	padding: .8rem .8rem 0 .8rem;
 	margin: 0;
 	border: 1px solid #dfdfdf;
 	border-top: none;
@@ -1740,174 +1683,93 @@ http://qrayg.com/experiment/cssmenus/
 	border:1px solid #999;
 }    
 
+.main-small-navigation, 
+.main-small-primary-navigation {
+        padding: 10px;
+		padding: 1rem;
+        width: 82%;
+        margin: auto;
+	}
+
 /* media queries for smaller viewports */
 
-@media (min-width: 45.5em) and (max-width: 71.25em) {
+@media only screen and (min-width: 45em) {
 
-	#container,
-	#footer .wrap { width: 98%; }
-
-}
-
-@media (min-width: 30em) and (max-width: 45.49em) {
-
-	#container { width: 98%; }
-
-	#branding, #site-title { float: none; text-align: center;}
-	
-	#content, 
-	.layout-1c #content, 
-	.layout-2c-l #content, 
-	.layout-2c-r #content,
-	.layout-default #content, 
-	.layout-3c-l #content, 
-	.layout-3c-r #content, 
-	.layout-3c-c #content {
-		width: 98%;
+	#container {
+	    max-width: 980px;
+	    max-width: 98rem;
+	 }
+	 #main .wrap {
+		padding: 20px 40px;
+		padding: 2.0rem 4rem;
+	}
+	#header .wrap{
+		padding: 25px 40px 10px 40px;
+		padding: 2.5rem 4rem 1rem 4rem;
+	}
+	 #branding {
+	 	float: left;
+	 	width: auto;
+	 }
+	 #site-title, #site-description {
+	 	text-align: left;
+	 }
+	#content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content {
 		float: left;
+		width: 70%;
+	}
+	/* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
+
+	.layout-1c #content {
+		width: 100%;
 	}
 
-	#sidebar-header {
-		clear:both;
-		width: 100%;
-		margin-top: 10px;
-		margin-top: 1rem;
-		float: left;
+	#sidebar-primary, 
+	#sidebar-secondary {
+		width: 25%;
 	}
-	
-	#sidebar-header .widget {
-		clear: both;
-		width: 100%;
-		margin: 0;
-	}
-	
-	.main-small-navigation, 
-	.main-small-primary-navigation {
-		padding: 10px;
-		padding: 1rem;
-	}
-	.main-small-navigation, 
-	.main-small-primary-navigation {
-        padding: 10px;
-		padding: 1rem;
-        width: 82%;
-        margin: auto;
-	}
-	
-	.layout-2c-r #sidebar-primary, 
+
 	.layout-2c-l #sidebar-primary, 
-	.layout-default #sidebar-primary {
-		width: 100%;
+	.layout-default #sidebar-primary,
+	.layout-default #sidebar-secondary  {
+		float: right;
+	}
+	.layout-2c-l #sidebar-secondary {
+		clear: left;
 		float: left;
+	}
+
+	.layout-2c-r #content {
+		float: right;
+	}
+	.layout-2c-r #sidebar-primary {
+		float: left;
+	}
+	.layout-2c-r #sidebar-secondary {
+		float: left;
+		clear: left;
+	}
+	#menu-subsidiary .wrap {
 		padding: 0;
 	}
-	.layout-2c-r #sidebar-secondary, 
-	.layout-2c-l #sidebar-secondary, 
-	.layout-default #sidebar-secondary {
-		width: 100%;
-		float: left;
+	#footer .wrap {
 		padding: 0;
 	}
-	#sidebar-subsidiary .widget {
-		width: 100%;
-	}
-	.comment-list li {
-		padding: 8px 8px 0 8px;
-		padding: .8rem .8rem 0 .8rem;
-	}
 
-}
-
-@media (min-width: 1em) and (max-width: 29.9em) { 
-
-	#container,
-	#footer .wrap { width: 98%; }
-
-	#branding, #site-title { float: none; text-align: center;}
-	
-	#content, 	
-	.layout-1c #content, 
-	.layout-2c-l #content, 
-	.layout-2c-r #content, 
-	.layout-default #content, 
-	.layout-3c-l #content, 
-	.layout-3c-r #content, 
-	.layout-3c-c #content {
-		width: 98%;
-		float: left;
-	}
-	
-	#sidebar-header {
-		clear:both;
-		width: 100%;
-        margin-top: 10px;
-		margin-top: 1rem;
-		float: left;
-	}
-	
-	#sidebar-header .widget {
-		clear: both;
-		width: 100%;
-		margin: 0;
-	}
-	
-	.main-small-navigation, 
-	.main-small-primary-navigation {
-        padding: 10px;
-		padding: 1rem;
-        width: 82%;
-        margin: auto;
-	}
-	
-	
-	.layout-2c-r #sidebar-primary, 
-	.layout-2c-l #sidebar-primary, 
-	.layout-default #sidebar-primary, 
-	.layout-2c-r #sidebar-secondary, 
-	.layout-2c-l #sidebar-secondary, 
-	.layout-default #sidebar-secondary, 
-	#sidebar-subsidiary .widget {
-        float: left;
-		clear: both;
-		width: 98%;
-	}
-	
-	copyright, .credit, #branding {
-    	clear: both;
-		float: left;
-		width:98%;
-		margin: 0 auto;
-	}
-	
-	.entry-title {
-		clear:both;
-	}
-
-	.hentry .thumbnail {
-		float: left;
-		margin: 0;
-	}
-	
-	.comment-list li {
-		padding: 4px 2px 0 4px;
-		padding: 0.4rem 0.2rem 0 0.4rem;
-	}
-
-	.comment-list .avatar {
-		float: left;
-		width: 25px;
-		width: 2.5rem;
-		height: 25px;
-		height: 2.5rem;
-		margin: 0 4px 2px 0 4px; 
-		margin: 0.4rem 0.2rem 0 0.4rem;
-	}
-	
-	#footer .copyright, 
-	#footer .credit {
+	#footer .copyright {
 		float: left;
 		text-align: left;
-		width: 100%;
+		width: 49%;
+	}
+
+	#footer .credit {
+		float: right;
+		text-align: right;
+		width: 49%;
+	}
+	.comment-list li {
+		padding: 24px 24px 0 24px;
+		padding: 2.4rem 2.4rem 0 2.4rem;
 	}
 
 }
