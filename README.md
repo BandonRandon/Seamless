@@ -11,7 +11,6 @@ To Do
 -------
 * Finish adding + styling all post formats (still issues with the Image post format)
 * Add support for custom headers
-* Clean up typograhpy/CSS (line-heights, font sizes, etc)
 * Clean up all php/html (Quadruple check every single file)
 * Make sure pot/mo files are synced
 * Update the screenshot
@@ -19,7 +18,6 @@ To Do
 Known Issues
 -------
 * Please contact me at james@seamlessthemes.com or open an issue here
-* User cannot use the menu dropdowns on a tablet (ipad, kindle, nexus, etc.) since you need a mouse for that.
 
 References
 -------
