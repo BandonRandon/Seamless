@@ -1331,11 +1331,15 @@ http://qrayg.com/experiment/cssmenus/
   width: 150px;
   height: 150px;
   */
-  margin: 0 0 5px 10px;
-  margin: 0 0 0.5rem 1rem;
+  margin: 0 0 10px 15px;
+  margin: 0 0 1rem 1.5rem;
+  padding: 4px;
+  padding: 0.4rem;
+  background: #f9f9f9;
+  border: 1px solid #dfdfdf;
 }
 
-/* line 1039, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1043, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .format-gallery.hentry .thumbnail {
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px #cccccc, 5px 5px 0 0 white, 5px 5px 0 1px #cccccc;
@@ -1343,7 +1347,7 @@ http://qrayg.com/experiment/cssmenus/
   margin: 0 0 1rem 1rem;
 }
 
-/* line 1048, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1052, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .format-aside .entry-content {
   padding: 15px;
   padding: 1.5rem;
@@ -1351,56 +1355,56 @@ http://qrayg.com/experiment/cssmenus/
   border-left: 5px solid #DDD;
 }
 
-/* line 1054, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1058, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .format-quote blockquote {
   margin: 0;
 }
 
-/* line 1060, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1064, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .entry-title {
   font-weight: bold;
   margin: 0 0 12px 0;
   margin: 0 0 1.2rem 0;
 }
 
-/* line 1065, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1069, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .singular .entry-title {
   margin: 0 0 8.5px 0;
   margin: 0 0 0.85rem 0;
 }
 
-/* line 1070, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1074, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .singular-page .entry-title,
 .singular-attachment .entry-title {
   margin: 0 0 15px;
   margin: 0 0 1.5rem;
 }
 
-/* line 1075, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1079, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .entry-title a {
   border-bottom: none;
   text-decoration: none;
 }
 
-/* line 1083, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1087, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .byline {
   margin: 0 0 15px 0;
   margin: 0 0 1.5rem 0;
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 1090, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1094, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .byline a:hover {
   text-decoration: underline;
 }
 
-/* line 1095, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1099, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .singular .byline {
   margin: 0 0 15px 0;
   margin: 0 0 1.5rem 0;
 }
 
-/* line 1103, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1107, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .entry-meta {
   clear: both;
   padding: 10px 0;
@@ -1408,12 +1412,12 @@ http://qrayg.com/experiment/cssmenus/
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 1111, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1115, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .entry-meta a:hover {
   text-decoration: underline;
 }
 
-/* line 1117, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1121, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-meta {
   margin: 0 0 15px 0;
   margin: 0 0 1.5rem 0;
@@ -1421,25 +1425,25 @@ http://qrayg.com/experiment/cssmenus/
   font-size: 1.6rem;
 }
 
-/* line 1123, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1127, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-description {
   overflow: hidden;
   font-style: italic;
 }
-/* line 1127, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1131, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-description p {
   margin: 0;
 }
-/* line 1130, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1134, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-description em {
   font-style: normal;
 }
 
-/* line 1134, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1138, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-title {
   margin: 0;
 }
-/* line 1137, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1141, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-title .avatar {
   float: left;
   width: 31.875px;
@@ -1451,7 +1455,7 @@ http://qrayg.com/experiment/cssmenus/
   padding: 0;
 }
 
-/* line 1150, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1154, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .singular .loop-nav {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1460,41 +1464,41 @@ http://qrayg.com/experiment/cssmenus/
   margin: 2rem 0 4rem 0;
   overflow: hidden;
 }
-/* line 1157, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1161, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .singular .loop-nav a {
   text-decoration: underline;
 }
 
-/* line 1163, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1167, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-nav .next {
   float: right;
   text-align: right;
 }
-/* line 1167, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1171, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .loop-nav .previous {
   float: left;
   text-align: left;
 }
 
-/* line 1172, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1176, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .page-links {
   clear: both;
   margin: 10px 0;
   margin: 1rem 0;
 }
-/* line 1177, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1181, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .page-links a {
   display: inline-block;
   padding: 2.5px;
   padding: 0.25rem;
 }
 
-/* line 1187, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1191, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .pagination.loop-pagination {
   padding-bottom: 30px;
   padding-bottom: 3.0rem;
 }
-/* line 1191, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1195, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .pagination .page-numbers {
   display: inline-block;
   padding: 2.5px 7.5px;
@@ -1503,7 +1507,7 @@ http://qrayg.com/experiment/cssmenus/
   margin: 0 0.75rem 0 0;
 }
 
-/* line 1206, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1210, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .breadcrumbs {
   font-size: 14px;
   font-size: 1.4rem;
@@ -1511,31 +1515,31 @@ http://qrayg.com/experiment/cssmenus/
   margin: .5rem 0 2.0rem 0;
   color: #999;
 }
-/* line 1213, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1217, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .breadcrumbs .trail-before {
   color: #777;
   display: inline-block;
   margin: 0 3.75px 0 0;
   margin: 0 0.375rem 0 0;
 }
-/* line 1219, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1223, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .breadcrumbs .trail-end {
   font-style: italic;
 }
 
-/* line 1223, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1227, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .breadcrumbs a {
   color: #777;
   border-bottom: 1px dotted #AAA;
   text-decoration: none;
 }
-/* line 1227, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1231, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .breadcrumbs a:hover {
   color: black;
   border-bottom: 1px dotted #333;
 }
 
-/* line 1232, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1236, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sep {
   display: inline-block;
   margin: 0 3.75px;
@@ -1543,12 +1547,12 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
-/* line 1240, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1244, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-1c #content {
   width: 100%;
 }
 
-/* line 1247, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1251, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #content,
 .layout-2c-l #content,
 .layout-2c-r #content,
@@ -1557,34 +1561,34 @@ http://qrayg.com/experiment/cssmenus/
   width: 100%;
 }
 
-/* line 1253, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1257, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-primary,
 #sidebar-secondary {
   width: 100%;
   padding: 2% 2% 0 2%;
 }
 
-/* line 1261, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1265, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-2c-l #sidebar-primary,
 .layout-default #sidebar-primary {
   float: left;
 }
-/* line 1264, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1268, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-2c-l #sidebar-secondary,
 .layout-default #sidebar-secondary {
   clear: right;
   float: right;
 }
 
-/* line 1271, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1275, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-2c-r #content {
   float: right;
 }
-/* line 1274, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1278, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-2c-r #sidebar-primary {
   float: left;
 }
-/* line 1277, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1281, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .layout-2c-r #sidebar-secondary {
   float: left;
   clear: left;
@@ -1592,41 +1596,41 @@ http://qrayg.com/experiment/cssmenus/
 
 /* end-content-area */
 /* general sidebars */
-/* line 1287, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1291, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .widget {
   padding: 0 0 20px 0;
   padding: 0 0 2.0rem 0;
 }
 
-/* line 1291, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1295, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .widget-title {
   font-weight: bold;
   margin: 0 0 10px;
   margin: 0 0 1.0rem;
 }
 
-/* line 1298, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1302, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sidebar .widget ul {
   list-style: none;
   padding: 0;
   margin-left: 5px;
   margin-left: .5rem;
 }
-/* line 1304, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1308, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sidebar .widget li {
   margin: 0;
 }
-/* line 1307, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1311, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sidebar .widget > ul {
   padding: 0;
 }
 
-/* line 1312, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1316, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sidebar .widget ul li a {
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 1318, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1322, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .sidebar .widget ul ul li {
   margin-left: 10px;
   margin-left: 1.0rem;
@@ -1634,25 +1638,25 @@ http://qrayg.com/experiment/cssmenus/
 
 /* #sidebar-secondary widget area */
 /* #sidebar-after-singular widget area */
-/* line 1328, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1332, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-after-singular {
   overflow: hidden;
   margin: 15px 0;
   margin: 1.5rem 0;
 }
 
-/* line 1337, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1341, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-after-singular .widget ul {
   list-style: square inside;
 }
 
 /* end sidebar styles */
 /* footer */
-/* line 1350, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1354, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #footer {
   width: 100%;
 }
-/* line 1353, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1357, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #footer .wrap {
   margin: 0 !important;
   padding: 0;
@@ -1661,12 +1665,12 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* subsidiary nav */
-/* line 1367, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1371, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #menu-subsidiary .wrap {
   padding: 0;
 }
 
-/* line 1371, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1375, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation {
   clear: both;
   display: block;
@@ -1674,14 +1678,14 @@ http://qrayg.com/experiment/cssmenus/
   text-align: center;
   /* forces layout */
 }
-/* line 1377, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1381, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation .wrap {
   margin: 0 auto;
   position: relative;
   overflow: visible;
   border-top: 1px solid #ddd;
 }
-/* line 1383, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1387, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation .wrap:after {
   content: ".";
   clear: both;
@@ -1690,14 +1694,14 @@ http://qrayg.com/experiment/cssmenus/
   visibility: hidden;
 }
 
-/* line 1391, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1395, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
   position: relative;
 }
-/* line 1397, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1401, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul ul {
   width: 160px;
   /* Sub Menu Width */
@@ -1709,28 +1713,28 @@ http://qrayg.com/experiment/cssmenus/
   left: 0;
   z-index: 9999;
 }
-/* line 1408, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1412, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul ul ul,
 .subsidiary-navigation ul ul ul ul {
   top: 0;
   left: 100%;
 }
 
-/* line 1415, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1419, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul li {
   float: left;
   display: inline;
   position: relative;
   margin: 0;
 }
-/* line 1421, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1425, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul ul li {
   width: 100%;
   display: block;
 }
 
 /* Root Menu */
-/* line 1429, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1433, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul a {
   float: left;
   display: block;
@@ -1742,7 +1746,7 @@ http://qrayg.com/experiment/cssmenus/
   height: 1%;
   /* Root Menu Hover Persistence */
 }
-/* line 1443, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1447, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .subsidiary-navigation ul a:hover,
 .subsidiary-navigation ul a li:hover a,
 .subsidiary-navigation ul a li.iehover a {
@@ -1750,37 +1754,37 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* #sidebar-subsidiary widget area */
-/* line 1450, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1454, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-subsidiary {
   overflow: hidden;
   width: 100%;
 }
-/* line 1454, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1458, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-subsidiary .wrap {
   padding: 1.5em;
   border-top: 1px solid #ddd;
 }
-/* line 1459, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1463, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-subsidiary .widget {
   width: 31%;
   float: left;
   margin: 1% 1% 4% 1%;
   padding: 0 1%;
 }
-/* line 1468, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1472, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-subsidiary .widget-title {
   margin: 0 0 5px 0;
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
 
-/* line 1475, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1479, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #sidebar-subsidiary .widget ul {
   list-style: square inside;
 }
 
 /* #footer area */
-/* line 1487, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1491, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #footer .copyright {
   float: left;
   text-align: left;
@@ -1789,7 +1793,7 @@ http://qrayg.com/experiment/cssmenus/
   padding: 1.5em 0;
   margin: 0;
 }
-/* line 1495, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1499, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #footer .credit {
   float: left;
   text-align: left;
@@ -1800,14 +1804,14 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* Comments */
-/* line 1510, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1514, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-list ol {
   list-style: none;
   margin: 0 0 1.5em 0;
   border-top: 1px solid #dfdfdf;
   padding: 0;
 }
-/* line 1516, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1520, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-list li {
   padding: 8px 8px 0 8px;
   padding: .8rem .8rem 0 .8rem;
@@ -1815,7 +1819,7 @@ http://qrayg.com/experiment/cssmenus/
   border: 1px solid #dfdfdf;
   border-top: none;
 }
-/* line 1523, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1527, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-list .avatar {
   float: left;
   width: 45px;
@@ -1829,14 +1833,14 @@ http://qrayg.com/experiment/cssmenus/
   border: 1px solid #eee;
 }
 
-/* line 1537, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1541, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-author.vcard {
   font-size: 15px;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* line 1543, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1547, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-meta {
   margin: 0 0 15px 0;
   margin: 0 0 1.5rem 0;
@@ -1845,14 +1849,14 @@ http://qrayg.com/experiment/cssmenus/
   line-height: 1.6;
 }
 
-/* line 1558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1562, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-content {
   margin-left: 60px;
   margin-left: 6.0rem;
   margin-left: 0;
   clear: both;
 }
-/* line 1564, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1568, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-content ol {
   list-style: decimal inside;
   margin: 0 0 15px 22.5px;
@@ -1861,7 +1865,7 @@ http://qrayg.com/experiment/cssmenus/
   padding: 0;
 }
 
-/* line 1574, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1578, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-content ul {
   list-style: square inside;
   margin: 0 0 15px 22.5px;
@@ -1869,28 +1873,28 @@ http://qrayg.com/experiment/cssmenus/
   border-top: none;
   padding: 0;
 }
-/* line 1582, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1586, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-content li {
   border: none;
   padding: 0;
 }
 
-/* line 1591, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1595, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .comment-list #respond {
   margin: 1.5em 0 0;
 }
 
-/* line 1597, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1601, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #respond .log-in-out a {
   font-style: italic;
 }
 
-/* line 1602, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1606, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #reply-title small a {
   font-style: italic;
 }
 
-/* line 1613, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1617, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 #respond #submit {
   float: left;
   margin: 0 0 15px;
@@ -1898,29 +1902,29 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 /* gravity forms */
-/* line 1622, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1626, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gform_body {
   width: 100%;
   margin: 5px 0 0 0;
   margin: 0.5rem 0 0 0;
 }
-/* line 1627, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1631, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gform_body ul {
   list-style: none !important;
   padding: 0 !important;
   /* set to important to override widget ul styles, etc when forms are in sidebars */
 }
-/* line 1631, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1635, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gform_body input {
   width: 100%;
 }
 
-/* line 1636, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1640, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gfield {
   margin: 0 0 2.5px;
   margin: 0 0 0.25rem;
 }
-/* line 1640, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1644, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gfield input {
   font-size: 12px;
   font-size: 1.2rem;
@@ -1929,7 +1933,7 @@ http://qrayg.com/experiment/cssmenus/
   border: 1px solid #999;
 }
 
-/* line 1649, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1653, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .ginput_left {
   width: 48%;
   float: left;
@@ -1937,7 +1941,7 @@ http://qrayg.com/experiment/cssmenus/
   margin: 0 0 0.25rem;
 }
 
-/* line 1656, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1660, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .ginput_right {
   width: 48%;
   float: right;
@@ -1945,7 +1949,7 @@ http://qrayg.com/experiment/cssmenus/
   margin: 0 0 0.25rem;
 }
 
-/* line 1665, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1669, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .ginput_left input,
 .ginput_right input {
   font-size: 12px;
@@ -1954,7 +1958,7 @@ http://qrayg.com/experiment/cssmenus/
   margin: 0 0 0.125rem;
 }
 
-/* line 1672, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1676, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .gform_body textarea {
   width: 100%;
   padding: 1.25px 0 0 1.25px;
@@ -1964,7 +1968,7 @@ http://qrayg.com/experiment/cssmenus/
   border: 1px solid #999;
 }
 
-/* line 1682, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+/* line 1686, C:/Users/James/Documents/GitHub/Seamless/style.scss */
 .main-small-navigation,
 .main-small-primary-navigation {
   padding: 10px;
@@ -1975,103 +1979,103 @@ http://qrayg.com/experiment/cssmenus/
 
 /* media queries for smaller viewports */
 @media only screen and (min-width: 45em) {
-  /* line 1693, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1697, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #container {
     max-width: 980px;
     max-width: 98rem;
   }
 
-  /* line 1697, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1701, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #main .wrap {
     padding: 20px 40px;
     padding: 2.0rem 4rem;
   }
 
-  /* line 1701, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1705, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #header .wrap {
     padding: 25px 40px 10px 40px;
     padding: 2.5rem 4rem 1rem 4rem;
   }
 
-  /* line 1705, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1709, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #branding {
     float: left;
     width: auto;
   }
 
-  /* line 1709, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1713, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #site-title, #site-description {
     text-align: left;
   }
 
-  /* line 1712, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1716, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content {
     float: left;
     width: 70%;
   }
 
   /* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
-  /* line 1718, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1722, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-1c #content {
     width: 100%;
   }
 
-  /* line 1723, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1727, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #sidebar-primary,
   #sidebar-secondary {
     width: 25%;
   }
 
-  /* line 1729, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1733, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-2c-l #sidebar-primary,
   .layout-default #sidebar-primary,
   .layout-default #sidebar-secondary {
     float: right;
   }
 
-  /* line 1732, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1736, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-2c-l #sidebar-secondary {
     clear: left;
     float: left;
   }
 
-  /* line 1738, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1742, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-2c-r #content {
     float: right;
   }
-  /* line 1741, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1745, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-2c-r #sidebar-primary {
     float: left;
   }
-  /* line 1744, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1748, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .layout-2c-r #sidebar-secondary {
     float: left;
     clear: left;
   }
 
-  /* line 1749, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1753, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #menu-subsidiary .wrap {
     padding: 0;
   }
 
-  /* line 1753, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1757, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #footer .wrap {
     padding: 0;
   }
-  /* line 1757, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1761, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #footer .copyright {
     float: left;
     text-align: left;
     width: 49%;
   }
-  /* line 1763, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1767, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   #footer .credit {
     float: right;
     text-align: right;
     width: 49%;
   }
 
-  /* line 1769, C:/Users/James/Documents/GitHub/Seamless/style.scss */
+  /* line 1773, C:/Users/James/Documents/GitHub/Seamless/style.scss */
   .comment-list li {
     padding: 24px 24px 0 24px;
     padding: 2.4rem 2.4rem 0 2.4rem;
