@@ -4,7 +4,7 @@ Theme Name: Seamless
 Theme URI: http://seamlessthemes.com
 Description: A responsive parent theme built on top of Hybrid Core
 
-Author: James Geiger
+Author: James
 Author URI: http://seamlessthemes.com
 Version: 0.1
 Tags: light, three-columns, two-columns, right-sidebar, left-sidebar, flexible-width, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
@@ -284,7 +284,7 @@ embed, iframe, object, video { max-width: 100%; }
 
 /* #main */
 #main { overflow: hidden; width: 100%; }
-#main .wrap { overflow: hidden; clear: both; margin: 0 auto; padding: 20px; padding: 2.0rem; }
+#main .wrap { overflow: hidden; clear: both; margin: 0 auto; }
 
 /* header */
 #header { width: 100%; }
@@ -297,7 +297,7 @@ embed, iframe, object, video { max-width: 100%; }
 #site-title a { color: #515151; display: block; text-decoration: none; }
 #site-title a:hover { color: #21759b; }
 
-#site-description { text-align: center; font-size: 13px; font-size: 1.3rem; padding: 0; margin: 15px 0; margin: 1.5rem 0; }
+#site-description { text-align: center; font-size: 13px; font-size: 1.3rem; padding: 0; margin-bottom: 15px; margin-bottom: 1.5rem; }
 
 #sidebar-header { overflow: hidden; float: right; background: none; width: 50%; margin: 0; padding: 0; }
 #sidebar-header .widget { float: right; width: 47.5%; margin: 0 0 0 2.5%; }
@@ -319,7 +319,7 @@ Description: Dynamic Menu System - Horizontal/Vertical
 http://qrayg.com/experiment/cssmenus/
 */
 .primary-navigation { clear: both; display: block; text-align: left; padding: 0 40px; padding: 0 4rem; }
-.primary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.primary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; background: #eee; }
 .primary-navigation .wrap:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
 
 #menu-primary li.current-menu-item a { font-weight: bold; }
@@ -331,7 +331,7 @@ http://qrayg.com/experiment/cssmenus/
 .primary-navigation { /* Root Menu */ }
 .primary-navigation ul li { float: left; display: inline; position: relative; margin: 0; }
 .primary-navigation ul ul li a { width: 200px; display: block; padding: 8px 10px; padding: 0.8rem 1rem; border-top: 1px solid #ddd; line-height: 2.3; }
-.primary-navigation ul a { float: left; display: block; text-decoration: none; line-height: 3.3; margin-right: 30px; margin-right: 3rem; height: 1%; }
+.primary-navigation ul a { float: left; display: block; text-decoration: none; line-height: 3.3; margin: 0 20px; margin: 0 2rem; height: 1%; }
 
 /* 2nd Menu */
 .primary-navigation ul li:hover li a, .primary-navigation ul li.iehover li a { float: none; background: #eee; }
@@ -371,9 +371,9 @@ http://qrayg.com/experiment/cssmenus/
 
 .sticky { padding: 15px; padding: 1.5rem; background: #F9F9F9; border-left: 5px solid #DDD; }
 
-.hentry .thumbnail { float: right; margin: 0 0 10px 15px; margin: 0 0 1rem 1.5rem; padding: 4px; padding: 0.4rem; background: #f9f9f9; border: 1px solid #dfdfdf; }
+.hentry .thumbnail { float: left; margin: 0 15px 10px 0; margin: 0 1.5rem 1rem 0; padding: 4px; padding: 0.4rem; background: #f9f9f9; border: 1px solid #dfdfdf; }
 
-.format-gallery.hentry .thumbnail { border: 4px solid #fff; box-shadow: 0 0 0 1px #cccccc, 5px 5px 0 0 white, 5px 5px 0 1px #cccccc; margin: 0 0 10px 10px; margin: 0 0 1rem 1rem; }
+.format-gallery.hentry .thumbnail { border: 4px solid #fff; box-shadow: 0 0 0 1px #cccccc, 5px 5px 0 0 white, 5px 5px 0 1px #cccccc; margin: 0 15px 10px 0; margin: 0 1.5rem 1rem 0; }
 
 .format-aside .entry-content { padding: 15px; padding: 1.5rem; background: #F9F9F9; border-left: 5px solid #DDD; }
 
@@ -467,7 +467,7 @@ http://qrayg.com/experiment/cssmenus/
 #menu-subsidiary .wrap { padding: 0; }
 
 .subsidiary-navigation { clear: both; display: block; width: 100%; text-align: center; }
-.subsidiary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; border-top: 1px solid #ddd; }
+.subsidiary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; background: #eee; }
 .subsidiary-navigation .wrap:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
 
 .subsidiary-navigation ul { margin: 0; padding: 0; list-style: none; position: relative; }
@@ -478,12 +478,12 @@ http://qrayg.com/experiment/cssmenus/
 .subsidiary-navigation ul ul li { width: 100%; display: block; }
 
 /* Root Menu */
-.subsidiary-navigation ul a { float: left; display: block; text-decoration: none; padding: 10px 0; padding: 1.0rem 0; margin-right: 20px; margin-right: 2rem; height: 1%; /* Root Menu Hover Persistence */ }
-.subsidiary-navigation ul a:hover, .subsidiary-navigation ul a li:hover a, .subsidiary-navigation ul a li.iehover a { COLOR: #000; }
+.subsidiary-navigation ul a { float: left; display: block; text-decoration: none; padding: 10px 0; padding: 1.0rem 0; margin: 0 20px; margin: 0 2rem; height: 1%; /* Root Menu Hover Persistence */ }
+.subsidiary-navigation ul a:hover, .subsidiary-navigation ul a li:hover a, .subsidiary-navigation ul a li.iehover a { color: #000; }
 
 /* #sidebar-subsidiary widget area */
 #sidebar-subsidiary { overflow: hidden; width: 100%; }
-#sidebar-subsidiary .wrap { padding: 1.5em; border-top: 1px solid #ddd; }
+#sidebar-subsidiary .wrap { padding: 1.5em; }
 #sidebar-subsidiary .widget { width: 31%; float: left; margin: 1% 1% 4% 1%; padding: 0 1%; }
 #sidebar-subsidiary .widget-title { margin: 0 0 5px 0; margin: 0 0 0.5rem 0; padding: 0; }
 

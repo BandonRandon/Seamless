@@ -4,7 +4,7 @@ Theme Name: Seamless
 Theme URI: http://seamlessthemes.com
 Description: A responsive parent theme built on top of Hybrid Core
 
-Author: James Geiger
+Author: James
 Author URI: http://seamlessthemes.com
 Version: 0.1
 Tags: light, three-columns, two-columns, right-sidebar, left-sidebar, flexible-width, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
@@ -654,8 +654,6 @@ input[type="submit"] {
 		overflow: hidden;
 		clear: both;
 		margin: 0 auto;
-		padding: 20px;
-		padding: 2.0rem;
 	}
 }
 	
@@ -711,8 +709,8 @@ input[type="submit"] {
 	font-size: 13px;
 	font-size: 1.3rem;
 	padding: 0;
-	margin: 15px 0;
-	margin: 1.5rem 0;
+	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
 }
 
 #sidebar-header {
@@ -785,8 +783,7 @@ http://qrayg.com/experiment/cssmenus/
 		margin: 0 auto;
 		position: relative;
 		overflow: visible;
-		border-top: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
+		background: #eee;
 	}
 	.wrap:after {  
 		content:"."; 
@@ -844,8 +841,8 @@ http://qrayg.com/experiment/cssmenus/
 		display: block;
 		text-decoration: none;
 		line-height: 3.3;
-		margin-right: 30px;
-		margin-right: 3rem;
+		margin: 0 20px;
+		margin: 0 2rem;
 		height: 1%;
 	}
 }
@@ -954,9 +951,9 @@ http://qrayg.com/experiment/cssmenus/
 }
 
 .hentry .thumbnail {
-	float: right;
-	margin: 0 0 10px 15px;
-	margin: 0 0 1rem 1.5rem;
+	float: left;
+	margin: 0 15px 10px 0;
+	margin: 0 1.5rem 1rem 0;
 	padding: 4px;
 	padding: 0.4rem;
 	background: #f9f9f9;
@@ -969,8 +966,8 @@ http://qrayg.com/experiment/cssmenus/
 		0 0 0 1px #ccc,
 		5px 5px 0 0 #fff,
 		5px 5px 0 1px #ccc;
-	margin: 0 0 10px 10px;
-	margin: 0 0 1rem 1rem;
+	margin: 0 15px 10px 0;
+	margin: 0 1.5rem 1rem 0;
 }
 .format-aside .entry-content {
 	padding: 15px;
@@ -1305,7 +1302,7 @@ http://qrayg.com/experiment/cssmenus/
 		margin: 0 auto;
 		position: relative;
 		overflow: visible;
-		border-top: 1px solid #ddd;
+		background: #eee;
 	}
 	.wrap:after {  
 		content:"."; 
@@ -1359,8 +1356,8 @@ http://qrayg.com/experiment/cssmenus/
 	text-decoration: none;
 	padding: 10px 0;	
 	padding: 1.0rem 0;
-	margin-right: 20px;
-	margin-right: 2rem;
+	margin: 0 20px;
+	margin: 0 2rem;
 	height: 1%;
 
 	/* Root Menu Hover Persistence */
@@ -1368,7 +1365,7 @@ http://qrayg.com/experiment/cssmenus/
 	&:hover,
 	li:hover a,
 	li.iehover a {
-		COLOR: #000;
+		color: #000;
 	}
 }
 
@@ -1380,7 +1377,6 @@ http://qrayg.com/experiment/cssmenus/
 
 	.wrap {
 		padding: 1.5em;
-		border-top: 1px solid #ddd;
 	}
 
 	.widget {
