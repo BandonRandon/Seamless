@@ -1,4 +1,5 @@
 /*
+
 Theme Name: Seamless
 Theme URI: http://seamlessthemes.com
 Description: A responsive parent theme built on top of Hybrid Core
@@ -20,2064 +21,535 @@ and Blueprint http://www.blueprintcss.org/
 */
 /* =Reset
 -------------------------------------------------------------- */
-/* line 33, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
 
-/* line 44, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-html {
-  font-size: 62.5%;
-  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-  overflow-y: scroll;
-  /* Keeps page centred in all browsers regardless of content height */
-  -webkit-text-size-adjust: 100%;
-  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  word-wrap: break-word;
-  word-break: break-word;
-}
+html { font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */ overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */ -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */ -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ -moz-hyphens: auto; -ms-hyphens: auto; -webkit-hyphens: auto; hyphens: auto; word-wrap: break-word; word-break: break-word; }
 
-/* box sizing FTW */
-/* src: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-/* line 60, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* assistive */
-/* line 70, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.skip-link,
-.screen-reader-text,
-.assistive-text {
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-}
+.skip-link, .screen-reader-text, .assistive-text { clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); position: absolute !important; }
 
-/* line 81, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-body,
-button,
-input,
-select,
-textarea {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.5;
-}
+body, button, input, select, textarea { font-size: 14px; font-size: 1.4rem; font-family: "Open Sans", Arial, sans-serif; line-height: 1.5; }
 
-/* line 90, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-input,
-button,
-textarea {
-  max-width: 98%;
-  line-height: normal;
-  border: 1px solid #CCC;
-  padding: 4px;
-  padding: .4rem;
-}
+input, button, textarea { max-width: 98%; line-height: normal; border: 1px solid #CCC; padding: 4px; padding: .4rem; }
 
-/* line 98, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-body {
-  margin: 3% 0 3% 0;
-  background: #E6E6E6;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: #000;
-}
+body { margin: 3% 0 3% 0; background: #E6E6E6; font-family: "Open Sans", Arial, sans-serif; color: #000; }
 
-/* line 105, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#container {
-  width: 98%;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-}
+#container { width: 98%; margin: 0 auto; background: #fff; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3); }
 
-/* line 111, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.wrap {
-  overflow: hidden;
-  clear: both;
-  padding: 0px;
-}
+.wrap { overflow: hidden; clear: both; padding: 0px; }
 
 /* various element styling */
-/* line 128, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
-/* line 134, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
+audio, canvas, video { display: inline-block; }
 
-/* line 137, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-audio:not([controls]) {
-  display: none;
-}
+audio:not([controls]) { display: none; }
 
-/* line 143, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-caption,
-th,
-td {
-  font-weight: normal;
-  text-align: left;
-}
+caption, th, td { font-weight: normal; text-align: left; }
 
-/* line 151, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-}
+blockquote:before, blockquote:after { content: ""; }
 
-/* line 155, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-blockquote,
-q {
-  quotes: "" "";
-}
+blockquote { quotes: "" ""; }
 
-/* line 159, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-acronym {
-  text-transform: uppercase;
-  color: #555;
-  background: #fcfcfc;
-}
+acronym { text-transform: uppercase; color: #555; background: #fcfcfc; }
 
-/* line 164, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-acronym:hover {
-  background: #f9f9f9;
-}
+acronym:hover { background: #f9f9f9; }
 
-/* line 169, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 
-/* line 176, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-sup {
-  top: -0.5em;
-}
+sup { top: -0.5em; }
 
-/* line 180, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-sub {
-  bottom: -0.25em;
-}
+sub { bottom: -0.25em; }
 
-/* line 184, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.massive {
-  font-size: 400%;
-}
+.massive { font-size: 400%; }
 
-/* line 188, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.italic,
-em {
-  font-style: italic;
-}
+em { font-style: italic; }
 
-/* line 192, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.bold,
-strong {
-  font-weight: 700;
-}
+strong { font-weight: 700; }
 
-/* line 195, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-del {
-  text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
 /* horizontal line */
-/* line 201, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-hr {
-  border: 0;
-  width: 100%;
-  color: #ddd;
-  background-color: #ddd;
-  height: 1px;
-}
+hr { border: 0; width: 100%; color: #ddd; background-color: #ddd; height: 1px; }
 
 /* default link styles */
-/* line 211, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-a {
-  color: #21759b;
-}
-/* line 214, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-a:hover {
-  color: #0f3647;
-}
+a { color: #21759b; }
+a:hover { color: #0f3647; }
 
 /* set link styles for various places */
-/* line 225, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content a,
-.entry-summary a,
-.byline a,
-.entry-meta a,
-.sidebar a {
-  color: #3388bb;
-}
-/* line 228, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content a:hover,
-.entry-summary a:hover,
-.byline a:hover,
-.entry-meta a:hover,
-.sidebar a:hover {
-  color: #004466;
-}
+.entry-content a, .entry-summary a, .byline a, .entry-meta a, .sidebar a { color: #3388bb; }
+.entry-content a:hover, .entry-summary a:hover, .byline a:hover, .entry-meta a:hover, .sidebar a:hover { color: #004466; }
 
-/* line 232, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-blockquote p:last-child, .format-aside p:last-child, .format-quote p:last-child {
-  margin-bottom: 0;
-}
+blockquote p:last-child, .format-aside p:last-child, .format-quote p:last-child { margin-bottom: 0; }
 
-/* line 236, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-p {
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-  line-height: 1.8;
-}
+p { margin: 0 0 15px 0; margin: 0 0 1.5rem 0; line-height: 1.8; }
 
-/* line 242, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.clear {
-  clear: both;
-}
+.clear { clear: both; }
 
-/* line 251, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 5px 0;
-  margin: 1.5rem 0;
-  padding: 0;
-  font-weight: normal;
-}
+h1, h2, h3, h4, h5, h6 { margin: 0 0 5px 0; margin: 1.5rem 0; padding: 0; font-weight: normal; }
 
-/* margin and padding and font-weight set to override browser defaults */
-/* line 258, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h1 {
-  font-size: 26px;
-  font-size: 2.6rem;
-}
+h1 { font-size: 26px; font-size: 2.6rem; }
 
-/* line 263, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h2 {
-  font-size: 21px;
-  font-size: 2.1rem;
-}
+h2 { font-size: 21px; font-size: 2.1rem; }
 
-/* line 268, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h3 {
-  font-size: 18px;
-  font-size: 1.8rem;
-}
+h3 { font-size: 18px; font-size: 1.8rem; }
 
-/* line 273, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h4 {
-  font-size: 16px;
-  font-size: 1.6rem;
-}
+h4 { font-size: 16px; font-size: 1.6rem; }
 
-/* line 278, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h5 {
-  font-size: 14px;
-  font-size: 1.4rem;
-}
+h5 { font-size: 14px; font-size: 1.4rem; }
 
-/* line 283, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-h6 {
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: normal;
-}
+h6 { font-size: 12px; font-size: 1.2rem; font-weight: normal; }
 
-/* entry-content line-heights */
-/* line 296, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-  line-height: 1.5;
-}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 { line-height: 1.5; }
 
-/* increase the size of main title h1s */
-/* line 303, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-title,
-.singular .hfeed .entry-title {
-  font-size: 21px;
-  font-size: 2.1rem;
-}
+.loop-title, .singular .hfeed .entry-title { font-size: 21px; font-size: 2.1rem; }
 
 /* tables */
-/* line 311, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-table {
-  /* tables still need 'cellspacing="0"' in the markup */
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 0 0 1.5em 0;
-  width: 100%;
-  border-left: 1px solid #e0e0e0;
-}
-/* line 318, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-table caption {
-  color: #999;
-}
-/* line 321, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-table th {
-  font-weight: bold;
-  padding: 2.5px 2%;
-  padding: 0.25rem 2%;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  text-align: left;
-}
+table { border-collapse: separate; border-spacing: 0; margin: 0 0 1.5em 0; width: 100%; border-left: 1px solid #e0e0e0; }
+table caption { color: #999; }
+table th { font-weight: bold; padding: 2.5px 2%; padding: 0.25rem 2%; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; text-align: left; }
 
-/* line 332, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-td {
-  padding: 2.5px 2%;
-  padding: 0.25rem 2%;
-  color: #444;
-  border-bottom: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-}
+td { padding: 2.5px 2%; padding: 0.25rem 2%; color: #444; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; }
 
 /* lists */
-/* line 343, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-ol,
-ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
-/* line 347, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-ul {
-  list-style: square inside;
-}
-/* line 350, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-ul ul {
-  margin: 2.5px 0 2.5px 5px;
-  margin: 0.25rem 0 0.25rem .5rem;
-}
+ul { list-style: square inside; }
+ul ul { margin: 2.5px 0 2.5px 5px; margin: 0.25rem 0 0.25rem .5rem; }
 
-/* line 356, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-ol {
-  list-style: decimal inside;
-}
-/* line 359, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-ol ol {
-  margin: 2.5px 0 2.5px 5px;
-  margin: 0.25rem 0 0.25rem .5rem;
-}
+ol { list-style: decimal inside; }
+ol ol { margin: 2.5px 0 2.5px 5px; margin: 0.25rem 0 0.25rem .5rem; }
 
-/* line 364, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-li {
-  margin: 0 0 0 25px;
-  margin: 0 0 0 2.5rem;
-  line-height: 1.8;
-}
+li { margin: 0 0 0 25px; margin: 0 0 0 2.5rem; line-height: 1.8; }
 
-/* line 369, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-dl {
-  margin: 0 0 15px 15px;
-  margin: 0 0 1.5rem 1.5rem;
-}
+dl { margin: 0 0 15px 15px; margin: 0 0 1.5rem 1.5rem; }
 
-/* line 373, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-dt {
-  font-weight: bold;
-}
+dt { font-weight: bold; }
 
-/* line 378, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-dl dt {
-  margin: 0;
-}
-/* line 381, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-dl dd {
-  margin: 0 0 2.5px 25px;
-  margin: 0 0 0.25rem 2.5rem;
-  padding: 0;
-  font-size: 14px;
-  font-size: 1.4rem;
-  color: #444;
-}
+dl dt { margin: 0; }
+dl dd { margin: 0 0 2.5px 25px; margin: 0 0 0.25rem 2.5rem; padding: 0; font-size: 14px; font-size: 1.4rem; color: #444; }
 
 /* blockquotes */
-/* line 393, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-blockquote {
-  overflow: hidden;
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-  padding: 15px;
-  padding: 1.5rem;
-  font-size: 14px;
-  font-size: 1.4rem;
-  background: #F9F9F9;
-  border-left: 5px solid #DDD;
-}
-/* line 404, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-blockquote blockquote {
-  background: #F9F9F9;
-  border-left: 5px solid #DDD;
-}
+blockquote { overflow: hidden; margin: 0 0 15px 0; margin: 0 0 1.5rem 0; padding: 15px; padding: 1.5rem; font-size: 14px; font-size: 1.4rem; background: #F9F9F9; border-left: 5px solid #DDD; }
+blockquote blockquote { background: #F9F9F9; border-left: 5px solid #DDD; }
 
 /* code */
-/* line 412, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-code {
-  padding: 0 2.5px;
-  padding: 0 0.25rem;
-  color: #555;
-  background: #F9F9F9;
-}
+code { padding: 0 2.5px; padding: 0 0.25rem; color: #555; background: #F9F9F9; }
 
-/* line 419, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-pre {
-  padding: 15px;
-  padding: 1.5rem;
-  margin: 15px 0;
-  margin: 1.5rem 0;
-  color: #555;
-  background: #F9F9F9;
-  border: 1px solid #dfdfdf;
-}
-/* line 428, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-pre code {
-  padding: 0;
-  background: transparent;
-}
+pre { padding: 15px; padding: 1.5rem; margin: 15px 0; margin: 1.5rem 0; color: #555; background: #F9F9F9; border: 1px solid #dfdfdf; }
+pre code { padding: 0; background: transparent; }
 
 /* Address */
-/* line 435, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-address {
-  display: block;
-  line-height: 1.7;
-  margin: 0 0 17px;
-  margin: 0 0 1.7rem;
-}
+address { display: block; line-height: 1.7; margin: 0 0 17px; margin: 0 0 1.7rem; }
 
 /* basic forms */
-/* line 444, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-input[type="text"] {
-  display: block;
-}
+input[type="text"] { display: block; }
 
-/* line 448, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-fieldset {
-  border: none;
-}
+fieldset { border: none; }
 
-/* line 452, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-textarea {
-  display: block;
-  width: 98%;
-}
+textarea { display: block; width: 98%; }
 
 /* Alignment */
-/* line 460, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.left,
-.alignleft {
-  float: left;
-  margin: 0 15px 0 0;
-  margin: 0 1.5rem 0 0;
-}
+.left, .alignleft { float: left; margin: 0 15px 0 0; margin: 0 1.5rem 0 0; }
 
-/* line 467, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.right,
-.alignright {
-  float: right;
-  margin: 0 0 0 15px;
-  margin: 0 0 0 1.5rem;
-}
+.right, .alignright { float: right; margin: 0 0 0 15px; margin: 0 0 0 1.5rem; }
 
-/* line 474, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.center,
-.aligncenter {
-  display: block;
-  margin: 0 auto 15px auto !important;
-  margin: 0 auto 1.5rem auto !important;
-}
+.center, .aligncenter { display: block; margin: 0 auto 15px auto !important; margin: 0 auto 1.5rem auto !important; }
 
-/* line 481, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.block,
-.alignnone {
-  display: block;
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-}
+.block, .alignnone { display: block; margin: 0 0 15px 0; margin: 0 0 1.5rem 0; }
 
-/* line 487, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.clear {
-  clear: both;
-}
+.clear { clear: both; }
 
 /* Responsive images */
-/* line 495, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content img,
-.comment-content img,
-.widget img {
-  max-width: 100%;
-  /* Fluid images for posts, comments, and widgets */
-}
+.entry-content img, .comment-content img, .widget img { max-width: 100%; }
 
-/* line 501, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"] {
-  height: auto;
-  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
+img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"] { height: auto; }
 
-/* line 508, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-img.size-full,
-img.size-large,
-img.header-image,
-img.wp-post-image {
-  max-width: 100%;
-  width: auto;
-  /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
-  height: auto;
-  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
+img.size-full, img.size-large, img.header-image, img.wp-post-image { max-width: 100%; width: auto; height: auto; }
 
-/* line 514, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content img {
-  max-width: 100%;
-  padding: 0;
-  border: none;
-}
+.entry-content img { max-width: 100%; padding: 0; border: none; }
 
 /* galleries */
-/* line 528, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery {
-  overflow: hidden;
-  margin: 0 0 -15px 0;
-  margin: 0 0 -1.5rem 0;
-}
-/* line 533, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery a {
-  border: none;
-}
-/* line 536, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery img {
-  margin: 0;
-  padding: 1.25px;
-  padding: 0.125rem;
-  border: none;
-}
+.gallery { overflow: hidden; margin: 0 0 -15px 0; margin: 0 0 -1.5rem 0; }
+.gallery a { border: none; }
+.gallery img { margin: 0; padding: 1.25px; padding: 0.125rem; border: none; }
 
-/* line 544, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery-item {
-  overflow: hidden;
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-}
+.gallery-item { overflow: hidden; margin: 0 0 15px 0; margin: 0 0 1.5rem 0; }
 
-/* line 550, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery-icon {
-  margin: 0;
-}
+.gallery-icon { margin: 0; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery {
-  display: block;
-  clear: both;
-  overflow: hidden;
-  margin: 0 auto;
-}
+.gallery { display: block; clear: both; overflow: hidden; margin: 0 auto; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery .gallery-row {
-  display: block;
-  clear: both;
-  overflow: hidden;
-  margin: 0;
-}
+.gallery .gallery-row { display: block; clear: both; overflow: hidden; margin: 0; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery .gallery-item {
-  overflow: hidden;
-  float: left;
-  margin: 0;
-  text-align: center;
-  list-style: none;
-  padding: 0;
-}
+.gallery .gallery-item { overflow: hidden; float: left; margin: 0; text-align: center; list-style: none; padding: 0; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery .gallery-item .gallery-icon img {
-  max-width: 89%;
-  height: auto;
-  padding: 1%;
-  margin: 0 auto;
-}
+.gallery .gallery-item .gallery-icon img { max-width: 89%; height: auto; padding: 1%; margin: 0 auto; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gallery-caption {
-  margin-left: 0;
-}
+.gallery-caption { margin-left: 0; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-0 {
-  width: 100%;
-}
+.col-0 { width: 100%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-1 {
-  width: 100%;
-}
+.col-1 { width: 100%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-2 {
-  width: 50%;
-}
+.col-2 { width: 50%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-3 {
-  width: 33.33%;
-}
+.col-3 { width: 33.33%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-4 {
-  width: 25%;
-}
+.col-4 { width: 25%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-5 {
-  width: 20%;
-}
+.col-5 { width: 20%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-6 {
-  width: 16.66%;
-}
+.col-6 { width: 16.66%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-7 {
-  width: 14.28%;
-}
+.col-7 { width: 14.28%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-8 {
-  width: 12.5%;
-}
+.col-8 { width: 12.5%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-9 {
-  width: 11.11%;
-}
+.col-9 { width: 11.11%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-10 {
-  width: 10%;
-}
+.col-10 { width: 10%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-11 {
-  width: 9.09%;
-}
+.col-11 { width: 9.09%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-12 {
-  width: 8.33%;
-}
+.col-12 { width: 8.33%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-13 {
-  width: 7.69%;
-}
+.col-13 { width: 7.69%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-14 {
-  width: 7.14%;
-}
+.col-14 { width: 7.14%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-15 {
-  width: 6.66%;
-}
+.col-15 { width: 6.66%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-16 {
-  width: 6.25%;
-}
+.col-16 { width: 6.25%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-17 {
-  width: 5.88%;
-}
+.col-17 { width: 5.88%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-18 {
-  width: 5.55%;
-}
+.col-18 { width: 5.55%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-19 {
-  width: 5.26%;
-}
+.col-19 { width: 5.26%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-20 {
-  width: 5%;
-}
+.col-20 { width: 5%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-21 {
-  width: 4.76%;
-}
+.col-21 { width: 4.76%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-22 {
-  width: 4.54%;
-}
+.col-22 { width: 4.54%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-23 {
-  width: 4.34%;
-}
+.col-23 { width: 4.34%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-24 {
-  width: 4.16%;
-}
+.col-24 { width: 4.16%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-25 {
-  width: 4%;
-}
+.col-25 { width: 4%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-26 {
-  width: 3.84%;
-}
+.col-26 { width: 3.84%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-27 {
-  width: 3.7%;
-}
+.col-27 { width: 3.7%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-28 {
-  width: 3.57%;
-}
+.col-28 { width: 3.57%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-29 {
-  width: 3.44%;
-}
+.col-29 { width: 3.44%; }
 
-/* line 558, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.col-30 {
-  width: 3.33%;
-}
+.col-30 { width: 3.33%; }
 
-/* Captions [caption] */
-/* line 562, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.wp-caption {
-  overflow: hidden;
-  padding: 3.5px 2px;
-  padding: .35rem 0.2rem;
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-}
-/* line 569, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.wp-caption img {
-  display: block;
-  max-width: 98%;
-  margin: 0 auto 6.25px auto;
-  margin: 0 auto 0.625rem auto;
-  padding: 1%;
-  border: none;
-}
-/* line 578, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.wp-caption .wp-caption-text {
-  margin: 0 2.5px;
-  margin: 0 0.25rem;
-  text-align: center;
-  font-style: 12px;
-  font-style: 1.2rem;
-}
+/* Captions */
+.wp-caption { overflow: hidden; padding: 3.5px 2px; padding: .35rem 0.2rem; background: #f9f9f9; border: 1px solid #ccc; }
+.wp-caption img { display: block; max-width: 98%; margin: 0 auto 6.25px auto; margin: 0 auto 0.625rem auto; padding: 1%; border: none; }
+.wp-caption .wp-caption-text { margin: 0 2.5px; margin: 0 0.25rem; text-align: center; font-style: 12px; font-style: 1.2rem; }
 
 /* Make sure videos and embeds fit their containers */
-/* line 592, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-embed,
-iframe,
-object,
-video {
-  max-width: 100%;
-}
+embed, iframe, object, video { max-width: 100%; }
 
-/* 
- * tweet oEmbed force max width 
- * kudos: http://kovshenin.com/2012/quick-tip-how-to-make-tweet-embeds-responsive/
+/*  tweet oEmbed force max width  kudos: http://kovshenin.com/2012/quick-tip-how-to-make-tweet-embeds-responsive/
 */
-/* line 601, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-content .twitter-tweet-rendered {
-  max-width: 100% !important;
-}
+.entry-content .twitter-tweet-rendered { max-width: 100% !important; }
 
 /* buttons - originally from the twentytwelve theme */
-/* line 609, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.button,
-.menu-toggle,
-input[type="submit"],
-.pagination .page-numbers {
-  padding: 6px 10px;
-  padding: 0.6rem 1.0rem;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: normal;
-  color: #7c7c7c;
-  background-color: #e6e6e6;
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
-  background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
-  background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
-  background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
-  border: 1px solid #d2d2d2;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
-}
+.button, .menu-toggle, input[type="submit"], .pagination .page-numbers { padding: 6px 10px; padding: 0.6rem 1.0rem; font-size: 12px; font-size: 1.2rem; line-height: 1.5; font-weight: normal; color: #7c7c7c; background-color: #eee; box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1); }
 
-/* line 632, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.button:hover
-.menu-toggle:hover,
-.pagination a:hover,
-input[type="submit"]:hover {
-  color: #5e5e5e;
-  background-color: #ebebeb;
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
-  background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
-  background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
-  background-image: linear-gradient(top, #f9f9f9, #ebebeb);
-}
+.button:hover .menu-toggle:hover, .pagination a:hover, input[type="submit"]:hover { color: #5e5e5e; background-color: #ebebeb; }
 
-/* line 648, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.button:active
-.menu-toggle:active,
-.menu-toggle.toggled-on,
-input[type="submit"]:active,
-.pagination .current,
-input[type="submit"].toggled-on {
-  color: #777;
-  background-color: #e1e1e1;
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
-  background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
-  background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
-  background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
-  background-image: linear-gradient(top, #ebebeb, #e1e1e1);
-  box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
-  border: none;
-}
+.button:active .menu-toggle:active, .menu-toggle.toggled-on, input[type="submit"]:active, .pagination .current, input[type="submit"].toggled-on { color: #777; background-color: #e1e1e1; }
 
-/* line 663, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.button,
-.menu-toggle,
-input[type="submit"] {
-  cursor: pointer;
-}
+.button, .menu-toggle, input[type="submit"] { cursor: pointer; }
 
 /* Search form */
-/* line 668, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.s {
-  float: left;
-  width: 130px;
-  width: 13rem;
-  margin: 0 15px 0 0;
-  margin: 0 1.5rem 0 0;
-}
+.s { float: left; width: 130px; width: 13rem; margin: 0 15px 0 0; margin: 0 1.5rem 0 0; }
 
-/* line 677, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.searchform label,
-.search-form label {
-  float: left;
-}
+.searchform label, .search-form label { float: left; }
 
-/* line 682, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.searchform input [type="text"],
-.search-form input [type="text"] {
-  clear: both;
-  float: left;
-  width: 65%;
-  height: 32px;
-  height: 3.2rem;
-  margin: 0;
-  padding: 6px 10px;
-  padding: 0.6rem 1.0rem;
-  font-size: 12px;
-  font-size: 1.2rem;
-  color: #aaa;
-  border: 1px solid #dfdfdf;
-  border-radius: 4px;
-}
-/* line 696, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.searchform input [type="text"]:focus,
-.search-form input [type="text"]:focus {
-  color: #999;
-  background: #fefefe;
-  border-color: #cfcfcf;
-  height: 32px;
-  height: 3.2rem;
-  padding: 3.75px 6.25px;
-  padding: 0.375rem 0.625rem;
-  border: 1px solid #dfdfdf;
-}
-/* line 707, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.searchform input [type="submit"],
-.search-form input [type="submit"] {
-  float: left;
-  border-left: none;
-  height: 32px;
-  height: 3.2rem;
-  padding: 6px 10px;
-  padding: 0.6rem 1.0rem;
-  margin: 0;
-}
+.searchform input [type="text"], .search-form input [type="text"] { clear: both; float: left; width: 65%; height: 32px; height: 3.2rem; margin: 0; padding: 6px 10px; padding: 0.6rem 1.0rem; font-size: 12px; font-size: 1.2rem; color: #aaa; border: 1px solid #dfdfdf; border-radius: 4px; }
+.searchform input [type="text"]:focus, .search-form input [type="text"]:focus { color: #999; background: #fefefe; border-color: #cfcfcf; height: 32px; height: 3.2rem; padding: 3.75px 6.25px; padding: 0.375rem 0.625rem; border: 1px solid #dfdfdf; }
+.searchform input [type="submit"], .search-form input [type="submit"] { float: left; border-left: none; height: 32px; height: 3.2rem; padding: 6px 10px; padding: 0.6rem 1.0rem; margin: 0; }
 
 /* #main */
-/* line 720, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#main {
-  overflow: hidden;
-  width: 100%;
-}
-/* line 724, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#main .wrap {
-  overflow: hidden;
-  clear: both;
-  margin: 0 auto;
-  padding: 20px;
-  padding: 2.0rem;
-}
+#main { overflow: hidden; width: 100%; }
+#main .wrap { overflow: hidden; clear: both; margin: 0 auto; padding: 20px; padding: 2.0rem; }
 
 /* header */
-/* line 735, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#header {
-  width: 100%;
-  /* forces layout */
-}
-/* line 738, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#header .wrap:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-/* line 745, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#header .wrap {
-  clear: both;
-  margin: 0 auto;
-  padding: 25px 2z0px 10px 20px;
-  padding: 2.5rem 2rem 1rem 2rem;
-  overflow: visible;
-}
+#header { width: 100%; }
+#header .wrap:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+#header .wrap { clear: both; margin: 0 auto; padding: 25px 2z0px 10px 20px; padding: 2.5rem 2rem 1rem 2rem; overflow: visible; }
 
-/* line 754, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#branding {
-  overflow: hidden;
-  background: none;
-  display: block;
-  margin: 0;
-  width: 100%;
-}
+#branding { overflow: hidden; background: none; display: block; margin: 0; width: 100%; }
 
-/* line 762, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#site-title {
-  text-align: center;
-  margin: 0 0 10px 0;
-  margin: 0 0 1rem 0;
-  font-weight: bold;
-  font-size: 26px;
-  font-size: 2.6rem;
-}
-/* line 770, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#site-title a {
-  color: #515151;
-  display: block;
-  text-decoration: none;
-}
-/* line 774, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#site-title a:hover {
-  color: #21759b;
-}
+#site-title { text-align: center; margin: 0 0 10px 0; margin: 0 0 1rem 0; font-weight: bold; font-size: 26px; font-size: 2.6rem; }
+#site-title a { color: #515151; display: block; text-decoration: none; }
+#site-title a:hover { color: #21759b; }
 
-/* line 780, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#site-description {
-  /* text-indent: -9999px; */
-  text-align: center;
-  font-size: 13px;
-  font-size: 1.3rem;
-  padding: 0;
-  margin: 15px 0;
-  margin: 1.5rem 0;
-}
+#site-description { text-align: center; font-size: 13px; font-size: 1.3rem; padding: 0; margin: 15px 0; margin: 1.5rem 0; }
 
-/* line 790, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-header {
-  overflow: hidden;
-  float: right;
-  background: none;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-/* line 798, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-header .widget {
-  float: right;
-  width: 47.5%;
-  margin: 0 0 0 2.5%;
-}
-/* line 804, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-header .widget-title {
-  margin: 0;
-}
-/* line 808, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-header .entry-title {
-  font-size: 15px;
-  font-size: 1.5rem;
-}
+#sidebar-header { overflow: hidden; float: right; background: none; width: 50%; margin: 0; padding: 0; }
+#sidebar-header .widget { float: right; width: 47.5%; margin: 0 0 0 2.5%; }
+#sidebar-header .widget-title { margin: 0; }
+#sidebar-header .entry-title { font-size: 15px; font-size: 1.5rem; }
 
 /* Small menu */
-/* line 816, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.menu-toggle {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 15px;
-  margin: 0 1.5rem;
-  padding: 5px 35px;
-  padding: 0.5rem 3.5rem;
-}
+.menu-toggle { cursor: pointer; display: inline-block; margin: 0 15px; margin: 0 1.5rem; padding: 5px 35px; padding: 0.5rem 3.5rem; }
 
-/* line 826, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.main-small-navigation,
-.main-small-primary-navigation {
-  text-align: center;
-}
-/* line 829, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.main-small-navigation .menu,
-.main-small-primary-navigation .menu {
-  display: none;
-  text-align: left;
-}
-/* line 833, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.main-small-navigation > ul,
-.main-small-primary-navigation > ul {
-  margin: 0 auto;
-  padding: 0;
-}
+.main-small-navigation, .main-small-primary-navigation { text-align: center; }
+.main-small-navigation .menu, .main-small-primary-navigation .menu { display: none; text-align: left; }
+.main-small-navigation > ul, .main-small-primary-navigation > ul { margin: 0 auto; padding: 0; }
 
 /* end-header */
 /* main-menu */
 /*
 Original Author: Craig Erskine
 Description: Dynamic Menu System - Horizontal/Vertical
-Adapted to Happy theme in various ways
 http://qrayg.com/experiment/cssmenus/
 */
-/* line 850, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation {
-  clear: both;
-  display: block;
-  text-align: left;
-  padding: 0 40px;
-  padding: 0 4rem;
-}
-/* line 857, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation .wrap {
-  margin: 0 auto;
-  position: relative;
-  overflow: visible;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-/* line 864, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation .wrap:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
+.primary-navigation { clear: both; display: block; text-align: left; padding: 0 40px; padding: 0 4rem; }
+.primary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.primary-navigation .wrap:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
 
-/* line 873, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#menu-primary li.current-menu-item a {
-  font-weight: bold;
-}
+#menu-primary li.current-menu-item a { font-weight: bold; }
 
-/* line 877, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-}
-/* line 882, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul ul {
-  width: 200px !important;
-  /* Sub Menu Width */
-  margin: 0;
-  list-style: none;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 9999;
-}
-/* line 892, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul ul ul, .primary-navigation ul ul ul ul {
-  top: 0;
-  left: 100%;
-  width: 100%;
-  /* Sub Menu Width */
-}
+.primary-navigation ul { margin: 0; padding: 0; list-style: none; position: relative; }
+.primary-navigation ul ul { width: 200px !important; /* Sub Menu Width */ margin: 0; list-style: none; display: none; position: absolute; top: 100%; left: 0; z-index: 9999; }
+.primary-navigation ul ul ul, .primary-navigation ul ul ul ul { top: 0; left: 100%; width: 100%; /* Sub Menu Width */ }
 
-/* line 899, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation {
-  /* Root Menu */
-}
-/* line 900, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li {
-  float: left;
-  display: inline;
-  position: relative;
-  margin: 0;
-}
-/* line 906, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul ul li a {
-  width: 200px;
-  display: block;
-  padding: 8px 10px;
-  padding: 0.8rem 1rem;
-  border-top: 1px solid #ddd;
-  line-height: 2.3;
-}
-/* line 915, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul a {
-  float: left;
-  display: block;
-  text-decoration: none;
-  line-height: 3.3;
-  margin-right: 30px;
-  margin-right: 3rem;
-  height: 1%;
-}
+.primary-navigation { /* Root Menu */ }
+.primary-navigation ul li { float: left; display: inline; position: relative; margin: 0; }
+.primary-navigation ul ul li a { width: 200px; display: block; padding: 8px 10px; padding: 0.8rem 1rem; border-top: 1px solid #ddd; line-height: 2.3; }
+.primary-navigation ul a { float: left; display: block; text-decoration: none; line-height: 3.3; margin-right: 30px; margin-right: 3rem; height: 1%; }
 
 /* 2nd Menu */
-/* line 929, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li a,
-.primary-navigation ul li.iehover li a {
-  float: none;
-  background: #eee;
-}
+.primary-navigation ul li:hover li a, .primary-navigation ul li.iehover li a { float: none; background: #eee; }
 
 /* 2nd Menu Hover Persistence */
-/* line 938, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li a:hover,
-.primary-navigation ul li:hover li:hover a,
-.primary-navigation ul li.iehover li a:hover,
-.primary-navigation ul li.iehover li.iehover a {
-  background: #e7e7e7;
-}
+.primary-navigation ul li:hover li a:hover, .primary-navigation ul li:hover li:hover a, .primary-navigation ul li.iehover li a:hover, .primary-navigation ul li.iehover li.iehover a { background: #e7e7e7; }
 
 /* 3rd Menu */
-/* line 944, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li:hover li a,
-.primary-navigation ul li.iehover li.iehover li a {
-  background: #e7e7e7;
-}
+.primary-navigation ul li:hover li:hover li a, .primary-navigation ul li.iehover li.iehover li a { background: #e7e7e7; }
 
 /* 3rd Menu Hover Persistence */
-/* line 952, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li:hover li a:hover,
-.primary-navigation ul li:hover li:hover li:hover a,
-.primary-navigation ul li.iehover li.iehover li a:hover,
-.primary-navigation ul li.iehover li.iehover li.iehover a {
-  background: #e3e3e3;
-}
+.primary-navigation ul li:hover li:hover li a:hover, .primary-navigation ul li:hover li:hover li:hover a, .primary-navigation ul li.iehover li.iehover li a:hover, .primary-navigation ul li.iehover li.iehover li.iehover a { background: #e3e3e3; }
 
 /* 4th Menu */
-/* line 958, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li:hover li:hover li a,
-.primary-navigation ul li.iehover li.iehover li.iehover li a {
-  background: #e3e3e3;
-}
+.primary-navigation ul li:hover li:hover li:hover li a, .primary-navigation ul li.iehover li.iehover li.iehover li a { background: #e3e3e3; }
 
 /* 4th Menu Hover */
-/* line 964, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover li:hover li:hover li a:hover,
-.primary-navigation ul li.iehover li.iehover li.iehover li a:hover {
-  background: #e3e3e3;
-}
+.primary-navigation ul li:hover li:hover li:hover li a:hover, .primary-navigation ul li.iehover li.iehover li.iehover li a:hover { background: #e3e3e3; }
 
 /* Hover Function - Do Not Move */
-/* line 972, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover ul ul,
-.primary-navigation ul li:hover ul ul ul,
-.primary-navigation ul li.iehover ul ul,
-.primary-navigation ul li.iehover ul ul ul {
-  display: none;
-}
+.primary-navigation ul li:hover ul ul, .primary-navigation ul li:hover ul ul ul, .primary-navigation ul li.iehover ul ul, .primary-navigation ul li.iehover ul ul ul { display: none; }
 
-/* line 980, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.primary-navigation ul li:hover ul,
-.primary-navigation ul ul li:hover ul,
-.primary-navigation ul ul ul li:hover ul,
-.primary-navigation ul li.iehover ul,
-.primary-navigation ul ul li.iehover ul,
-.primary-navigation ul ul ul li.iehover ul {
-  display: block;
-}
+.primary-navigation ul li:hover ul, .primary-navigation ul ul li:hover ul, .primary-navigation ul ul ul li:hover ul, .primary-navigation ul li.iehover ul, .primary-navigation ul ul li.iehover ul, .primary-navigation ul ul ul li.iehover ul { display: block; }
 
 /* content-area */
-/* line 986, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#content {
-  width: 100%;
-  /* standard 720px width */
-  margin: 0;
-}
+#content { width: 100%; /* standard 720px width */ margin: 0; }
 
-/* line 992, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-default .hfeed,
-.layout-2c-l .hfeed {
-  /* increase the margin on the actual page content */
-  margin: 14px 0 14px 0;
-  margin: 1.4rem 0 1.4rem 0;
-}
+.layout-default .hfeed, .layout-2c-l .hfeed { margin: 14px 0 14px 0; margin: 1.4rem 0 1.4rem 0; }
 
-/* line 997, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-r .hfeed {
-  /* increase the margin on the actual page content */
-  margin: 16px 0 16px 0;
-  margin: 1.6rem 0 1.6rem 0;
-}
+.layout-2c-r .hfeed { margin: 16px 0 16px 0; margin: 1.6rem 0 1.6rem 0; }
 
-/* line 1002, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.page-template-front-page #content {
-  padding: 0;
-}
+.page-template-front-page #content { padding: 0; }
 
-/* line 1006, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.hentry {
-  margin: 0 0 28px 0;
-  margin: 0 0 2.8rem 0;
-  padding: 0 0 8px 0;
-  padding: 0 0 0.8rem 0;
-}
+.hentry { margin: 0 0 28px 0; margin: 0 0 2.8rem 0; padding: 0 0 8px 0; padding: 0 0 0.8rem 0; }
 
-/* line 1012, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular .hentry {
-  margin: 0;
-}
+.singular .hentry { margin: 0; }
 
-/* line 1022, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sticky {
-  padding: 15px;
-  padding: 1.5rem;
-  background: #F9F9F9;
-  border-left: 5px solid #DDD;
-}
+.sticky { padding: 15px; padding: 1.5rem; background: #F9F9F9; border-left: 5px solid #DDD; }
 
-/* line 1029, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.hentry .thumbnail {
-  float: right;
-  /* image sizes are better defined with add_theme_support - this is just a css fallback, like when the src image is too large. don't always need
-  width: 150px;
-  height: 150px;
-  */
-  margin: 0 0 10px 15px;
-  margin: 0 0 1rem 1.5rem;
-  padding: 4px;
-  padding: 0.4rem;
-  background: #f9f9f9;
-  border: 1px solid #dfdfdf;
-}
+.hentry .thumbnail { float: right; margin: 0 0 10px 15px; margin: 0 0 1rem 1.5rem; padding: 4px; padding: 0.4rem; background: #f9f9f9; border: 1px solid #dfdfdf; }
 
-/* line 1043, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.format-gallery.hentry .thumbnail {
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 1px #cccccc, 5px 5px 0 0 white, 5px 5px 0 1px #cccccc;
-  margin: 0 0 10px 10px;
-  margin: 0 0 1rem 1rem;
-}
+.format-gallery.hentry .thumbnail { border: 4px solid #fff; box-shadow: 0 0 0 1px #cccccc, 5px 5px 0 0 white, 5px 5px 0 1px #cccccc; margin: 0 0 10px 10px; margin: 0 0 1rem 1rem; }
 
-/* line 1052, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.format-aside .entry-content {
-  padding: 15px;
-  padding: 1.5rem;
-  background: #F9F9F9;
-  border-left: 5px solid #DDD;
-}
+.format-aside .entry-content { padding: 15px; padding: 1.5rem; background: #F9F9F9; border-left: 5px solid #DDD; }
 
-/* line 1058, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.format-quote blockquote {
-  margin: 0;
-}
+.format-quote blockquote { margin: 0; }
 
-/* line 1064, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-title {
-  font-weight: bold;
-  margin: 0 0 12px 0;
-  margin: 0 0 1.2rem 0;
-}
+.entry-title { font-weight: bold; margin: 0 0 12px 0; margin: 0 0 1.2rem 0; }
 
-/* line 1069, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular .entry-title {
-  margin: 0 0 8.5px 0;
-  margin: 0 0 0.85rem 0;
-}
+.singular .entry-title { margin: 0 0 8.5px 0; margin: 0 0 0.85rem 0; }
 
-/* line 1074, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular-page .entry-title,
-.singular-attachment .entry-title {
-  margin: 0 0 15px;
-  margin: 0 0 1.5rem;
-}
+.singular-page .entry-title, .singular-attachment .entry-title { margin: 0 0 15px; margin: 0 0 1.5rem; }
 
-/* line 1079, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-title a {
-  border-bottom: none;
-  text-decoration: none;
-}
+.entry-title a { border-bottom: none; text-decoration: none; }
 
-/* line 1087, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.byline {
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-  font-size: 13px;
-  font-size: 1.3rem;
-}
-/* line 1094, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.byline a:hover {
-  text-decoration: underline;
-}
+.byline { margin: 0 0 15px 0; margin: 0 0 1.5rem 0; font-size: 13px; font-size: 1.3rem; }
+.byline a:hover { text-decoration: underline; }
 
-/* line 1099, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular .byline {
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-}
+.singular .byline { margin: 0 0 15px 0; margin: 0 0 1.5rem 0; }
 
-/* line 1107, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-meta {
-  clear: both;
-  padding: 10px 0;
-  padding: 1.0rem 0;
-  font-size: 13px;
-  font-size: 1.3rem;
-}
-/* line 1115, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.entry-meta a:hover {
-  text-decoration: underline;
-}
+.entry-meta { clear: both; padding: 10px 0; padding: 1.0rem 0; font-size: 13px; font-size: 1.3rem; }
+.entry-meta a:hover { text-decoration: underline; }
 
-/* line 1121, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-meta {
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-  font-size: 16px;
-  font-size: 1.6rem;
-}
+.loop-meta { margin: 0 0 15px 0; margin: 0 0 1.5rem 0; font-size: 16px; font-size: 1.6rem; }
 
-/* line 1127, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-description {
-  overflow: hidden;
-  font-style: italic;
-}
-/* line 1131, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-description p {
-  margin: 0;
-}
-/* line 1134, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-description em {
-  font-style: normal;
-}
+.loop-description { overflow: hidden; font-style: italic; }
+.loop-description p { margin: 0; }
+.loop-description em { font-style: normal; }
 
-/* line 1138, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-title {
-  margin: 0;
-}
-/* line 1141, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-title .avatar {
-  float: left;
-  width: 31.875px;
-  width: 3.1875rem;
-  height: 31.875px;
-  height: 3.1875rem;
-  margin: 0 15px 5px 0;
-  margin: 0 1.5rem 0.5rem 0;
-  padding: 0;
-}
+.loop-title { margin: 0; }
+.loop-title .avatar { float: left; width: 31.875px; width: 3.1875rem; height: 31.875px; height: 3.1875rem; margin: 0 15px 5px 0; margin: 0 1.5rem 0.5rem 0; padding: 0; }
 
-/* line 1154, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular .loop-nav {
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin: 20px 0 40px 0;
-  margin: 2rem 0 4rem 0;
-  overflow: hidden;
-}
-/* line 1161, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.singular .loop-nav a {
-  text-decoration: underline;
-}
+.singular .loop-nav { font-size: 15px; font-size: 1.5rem; line-height: 1; margin: 20px 0 40px 0; margin: 2rem 0 4rem 0; overflow: hidden; }
+.singular .loop-nav a { text-decoration: underline; }
 
-/* line 1167, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-nav .next {
-  float: right;
-  text-align: right;
-}
-/* line 1171, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.loop-nav .previous {
-  float: left;
-  text-align: left;
-}
+.loop-nav .next { float: right; text-align: right; }
+.loop-nav .previous { float: left; text-align: left; }
 
-/* line 1176, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.page-links {
-  clear: both;
-  margin: 10px 0;
-  margin: 1rem 0;
-}
-/* line 1181, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.page-links a {
-  display: inline-block;
-  padding: 2.5px;
-  padding: 0.25rem;
-}
+.page-links { clear: both; margin: 10px 0; margin: 1rem 0; }
+.page-links a { display: inline-block; padding: 2.5px; padding: 0.25rem; }
 
-/* line 1191, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.pagination.loop-pagination {
-  padding-bottom: 30px;
-  padding-bottom: 3.0rem;
-}
-/* line 1195, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.pagination .page-numbers {
-  display: inline-block;
-  padding: 2.5px 7.5px;
-  padding: 0.25rem 0.75rem;
-  margin: 0 7.5px 0 0;
-  margin: 0 0.75rem 0 0;
-}
+.pagination.loop-pagination { padding-bottom: 30px; padding-bottom: 3.0rem; }
+.pagination .page-numbers { display: inline-block; padding: 2.5px 7.5px; padding: 0.25rem 0.75rem; margin: 0 7.5px 0 0; margin: 0 0.75rem 0 0; }
 
-/* line 1210, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.breadcrumbs {
-  font-size: 14px;
-  font-size: 1.4rem;
-  margin: 5px 0 20px 0;
-  margin: .5rem 0 2.0rem 0;
-  color: #999;
-}
-/* line 1217, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.breadcrumbs .trail-before {
-  color: #777;
-  display: inline-block;
-  margin: 0 3.75px 0 0;
-  margin: 0 0.375rem 0 0;
-}
-/* line 1223, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.breadcrumbs .trail-end {
-  font-style: italic;
-}
+.breadcrumbs { font-size: 14px; font-size: 1.4rem; margin: 5px 0 20px 0; margin: .5rem 0 2.0rem 0; color: #999; }
+.breadcrumbs .trail-before { color: #777; display: inline-block; margin: 0 3.75px 0 0; margin: 0 0.375rem 0 0; }
+.breadcrumbs .trail-end { font-style: italic; }
 
-/* line 1227, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.breadcrumbs a {
-  color: #777;
-  border-bottom: 1px dotted #AAA;
-  text-decoration: none;
-}
-/* line 1231, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.breadcrumbs a:hover {
-  color: black;
-  border-bottom: 1px dotted #333;
-}
+.breadcrumbs a { color: #777; border-bottom: 1px dotted #AAA; text-decoration: none; }
+.breadcrumbs a:hover { color: black; border-bottom: 1px dotted #333; }
 
-/* line 1236, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sep {
-  display: inline-block;
-  margin: 0 3.75px;
-  margin: 0 .375rem;
-}
+.sep { display: inline-block; margin: 0 3.75px; margin: 0 .375rem; }
 
 /* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
-/* line 1244, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-1c #content {
-  width: 100%;
-}
+.layout-1c #content { width: 100%; }
 
-/* line 1251, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#content,
-.layout-2c-l #content,
-.layout-2c-r #content,
-.layout-default #content {
-  float: left;
-  width: 100%;
-}
+#content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content { float: left; width: 100%; }
 
-/* line 1257, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-primary,
-#sidebar-secondary {
-  width: 100%;
-  padding: 2% 2% 0 2%;
-}
+#sidebar-primary, #sidebar-secondary { width: 100%; padding: 2% 2% 0 2%; }
 
-/* line 1265, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-l #sidebar-primary,
-.layout-default #sidebar-primary {
-  float: left;
-}
-/* line 1268, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-l #sidebar-secondary,
-.layout-default #sidebar-secondary {
-  clear: right;
-  float: right;
-}
+.layout-2c-l #sidebar-primary, .layout-default #sidebar-primary { float: left; }
+.layout-2c-l #sidebar-secondary, .layout-default #sidebar-secondary { clear: right; float: right; }
 
-/* line 1275, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-r #content {
-  float: right;
-}
-/* line 1278, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-r #sidebar-primary {
-  float: left;
-}
-/* line 1281, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.layout-2c-r #sidebar-secondary {
-  float: left;
-  clear: left;
-}
+.layout-2c-r #content { float: right; }
+.layout-2c-r #sidebar-primary { float: left; }
+.layout-2c-r #sidebar-secondary { float: left; clear: left; }
 
 /* end-content-area */
 /* general sidebars */
-/* line 1291, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.widget {
-  padding: 0 0 20px 0;
-  padding: 0 0 2.0rem 0;
-}
+.widget { padding: 0 0 20px 0; padding: 0 0 2.0rem 0; }
 
-/* line 1295, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.widget-title {
-  font-weight: bold;
-  margin: 0 0 10px;
-  margin: 0 0 1.0rem;
-}
+.widget-title { font-weight: bold; margin: 0 0 10px; margin: 0 0 1.0rem; }
 
-/* line 1302, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sidebar .widget ul {
-  list-style: none;
-  padding: 0;
-  margin-left: 5px;
-  margin-left: .5rem;
-}
-/* line 1308, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sidebar .widget li {
-  margin: 0;
-}
-/* line 1311, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sidebar .widget > ul {
-  padding: 0;
-}
+.sidebar .widget ul { list-style: none; padding: 0; margin-left: 5px; margin-left: .5rem; }
+.sidebar .widget li { margin: 0; }
+.sidebar .widget > ul { padding: 0; }
 
-/* line 1316, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sidebar .widget ul li a {
-  font-size: 13px;
-  font-size: 1.3rem;
-}
-/* line 1322, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.sidebar .widget ul ul li {
-  margin-left: 10px;
-  margin-left: 1.0rem;
-}
+.sidebar .widget ul li a { font-size: 13px; font-size: 1.3rem; }
+.sidebar .widget ul ul li { margin-left: 10px; margin-left: 1.0rem; }
 
 /* #sidebar-secondary widget area */
 /* #sidebar-after-singular widget area */
-/* line 1332, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-after-singular {
-  overflow: hidden;
-  margin: 15px 0;
-  margin: 1.5rem 0;
-}
+#sidebar-after-singular { overflow: hidden; margin: 15px 0; margin: 1.5rem 0; }
 
-/* line 1341, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-after-singular .widget ul {
-  list-style: square inside;
-}
+#sidebar-after-singular .widget ul { list-style: square inside; }
 
 /* end sidebar styles */
 /* footer */
-/* line 1354, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#footer {
-  width: 100%;
-}
-/* line 1357, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#footer .wrap {
-  margin: 0 !important;
-  padding: 0;
-  width: 100%;
-  border-top: 1px solid #DDD;
-}
+#footer { width: 100%; }
+#footer .wrap { margin: 0 !important; padding: 0; width: 100%; border-top: 1px solid #DDD; }
 
 /* subsidiary nav */
-/* line 1371, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#menu-subsidiary .wrap {
-  padding: 0;
-}
+#menu-subsidiary .wrap { padding: 0; }
 
-/* line 1375, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation {
-  clear: both;
-  display: block;
-  width: 100%;
-  text-align: center;
-  /* forces layout */
-}
-/* line 1381, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation .wrap {
-  margin: 0 auto;
-  position: relative;
-  overflow: visible;
-  border-top: 1px solid #ddd;
-}
-/* line 1387, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation .wrap:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
+.subsidiary-navigation { clear: both; display: block; width: 100%; text-align: center; }
+.subsidiary-navigation .wrap { margin: 0 auto; position: relative; overflow: visible; border-top: 1px solid #ddd; }
+.subsidiary-navigation .wrap:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
 
-/* line 1395, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-}
-/* line 1401, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul ul {
-  width: 160px;
-  /* Sub Menu Width */
-  margin: 0;
-  list-style: none;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 9999;
-}
-/* line 1412, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul ul ul,
-.subsidiary-navigation ul ul ul ul {
-  top: 0;
-  left: 100%;
-}
+.subsidiary-navigation ul { margin: 0; padding: 0; list-style: none; position: relative; }
+.subsidiary-navigation ul ul { width: 160px; /* Sub Menu Width */ margin: 0; list-style: none; display: none; position: absolute; top: 100%; left: 0; z-index: 9999; }
+.subsidiary-navigation ul ul ul, .subsidiary-navigation ul ul ul ul { top: 0; left: 100%; }
 
-/* line 1419, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul li {
-  float: left;
-  display: inline;
-  position: relative;
-  margin: 0;
-}
-/* line 1425, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul ul li {
-  width: 100%;
-  display: block;
-}
+.subsidiary-navigation ul li { float: left; display: inline; position: relative; margin: 0; }
+.subsidiary-navigation ul ul li { width: 100%; display: block; }
 
 /* Root Menu */
-/* line 1433, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul a {
-  float: left;
-  display: block;
-  text-decoration: none;
-  padding: 10px 0;
-  padding: 1.0rem 0;
-  margin-right: 20px;
-  margin-right: 2rem;
-  height: 1%;
-  /* Root Menu Hover Persistence */
-}
-/* line 1447, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.subsidiary-navigation ul a:hover,
-.subsidiary-navigation ul a li:hover a,
-.subsidiary-navigation ul a li.iehover a {
-  COLOR: #000;
-}
+.subsidiary-navigation ul a { float: left; display: block; text-decoration: none; padding: 10px 0; padding: 1.0rem 0; margin-right: 20px; margin-right: 2rem; height: 1%; /* Root Menu Hover Persistence */ }
+.subsidiary-navigation ul a:hover, .subsidiary-navigation ul a li:hover a, .subsidiary-navigation ul a li.iehover a { COLOR: #000; }
 
 /* #sidebar-subsidiary widget area */
-/* line 1454, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-subsidiary {
-  overflow: hidden;
-  width: 100%;
-}
-/* line 1458, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-subsidiary .wrap {
-  padding: 1.5em;
-  border-top: 1px solid #ddd;
-}
-/* line 1463, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-subsidiary .widget {
-  width: 31%;
-  float: left;
-  margin: 1% 1% 4% 1%;
-  padding: 0 1%;
-}
-/* line 1472, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-subsidiary .widget-title {
-  margin: 0 0 5px 0;
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-}
+#sidebar-subsidiary { overflow: hidden; width: 100%; }
+#sidebar-subsidiary .wrap { padding: 1.5em; border-top: 1px solid #ddd; }
+#sidebar-subsidiary .widget { width: 31%; float: left; margin: 1% 1% 4% 1%; padding: 0 1%; }
+#sidebar-subsidiary .widget-title { margin: 0 0 5px 0; margin: 0 0 0.5rem 0; padding: 0; }
 
-/* line 1479, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#sidebar-subsidiary .widget ul {
-  list-style: square inside;
-}
+#sidebar-subsidiary .widget ul { list-style: square inside; }
 
 /* #footer area */
-/* line 1491, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#footer .copyright {
-  float: left;
-  text-align: left;
-  width: 100%;
-  padding: 15px 20px;
-  padding: 1.5em 0;
-  margin: 0;
-}
-/* line 1499, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#footer .credit {
-  float: left;
-  text-align: left;
-  width: 100%;
-  padding: 15px 20px;
-  padding: 1.5em 0;
-  margin: 0;
-}
+#footer .copyright { float: left; text-align: left; width: 100%; padding: 15px 20px; padding: 1.5em 0; margin: 0; }
+#footer .credit { float: left; text-align: left; width: 100%; padding: 15px 20px; padding: 1.5em 0; margin: 0; }
 
 /* Comments */
-/* line 1514, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-list ol {
-  list-style: none;
-  margin: 0 0 1.5em 0;
-  border-top: 1px solid #dfdfdf;
-  padding: 0;
-}
-/* line 1520, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-list li {
-  padding: 8px 8px 0 8px;
-  padding: .8rem .8rem 0 .8rem;
-  margin: 0;
-  border: 1px solid #dfdfdf;
-  border-top: none;
-}
-/* line 1527, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-list .avatar {
-  float: left;
-  width: 45px;
-  width: 4.5rem;
-  height: 45px;
-  height: 4.5rem;
-  margin: 0 10px 5px 0;
-  margin: 0 1rem 0.5rem 0;
-  padding: 1.25px;
-  padding: 0.125rem;
-  border: 1px solid #eee;
-}
+.comment-list ol { list-style: none; margin: 0 0 1.5em 0; border-top: 1px solid #dfdfdf; padding: 0; }
+.comment-list li { padding: 8px 8px 0 8px; padding: .8rem .8rem 0 .8rem; margin: 0; border: 1px solid #dfdfdf; border-top: none; }
+.comment-list .avatar { float: left; width: 45px; width: 4.5rem; height: 45px; height: 4.5rem; margin: 0 10px 5px 0; margin: 0 1rem 0.5rem 0; padding: 1.25px; padding: 0.125rem; border: 1px solid #eee; }
 
-/* line 1541, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-author.vcard {
-  font-size: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+.comment-author.vcard { font-size: 15px; font-size: 1.5rem; font-weight: bold; }
 
-/* line 1547, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-meta {
-  margin: 0 0 15px 0;
-  margin: 0 0 1.5rem 0;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
+.comment-meta { margin: 0 0 15px 0; margin: 0 0 1.5rem 0; font-size: 12px; font-size: 1.2rem; line-height: 1.6; }
 
-/* line 1562, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-content {
-  margin-left: 60px;
-  margin-left: 6.0rem;
-  margin-left: 0;
-  clear: both;
-}
-/* line 1568, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-content ol {
-  list-style: decimal inside;
-  margin: 0 0 15px 22.5px;
-  margin: 0 0 1.5rem 2.25rem;
-  border-top: none;
-  padding: 0;
-}
+.comment-content { margin-left: 60px; margin-left: 6.0rem; margin-left: 0; clear: both; }
+.comment-content ol { list-style: decimal inside; margin: 0 0 15px 22.5px; margin: 0 0 1.5rem 2.25rem; border-top: none; padding: 0; }
+.comment-content ul { list-style: square inside; margin: 0 0 15px 22.5px; margin: 0 0 1.5rem 2.25rem; border-top: none; padding: 0; }
+.comment-content li { border: none; padding: 0; }
 
-/* line 1578, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-content ul {
-  list-style: square inside;
-  margin: 0 0 15px 22.5px;
-  margin: 0 0 1.5rem 2.25rem;
-  border-top: none;
-  padding: 0;
-}
-/* line 1586, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-content li {
-  border: none;
-  padding: 0;
-}
+.comment-list #respond { margin: 1.5em 0 0; }
 
-/* line 1595, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.comment-list #respond {
-  margin: 1.5em 0 0;
-}
+#respond .log-in-out a { font-style: italic; }
 
-/* line 1601, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#respond .log-in-out a {
-  font-style: italic;
-}
+#reply-title small a { font-style: italic; }
 
-/* line 1606, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#reply-title small a {
-  font-style: italic;
-}
-
-/* line 1617, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-#respond #submit {
-  float: left;
-  margin: 0 0 15px;
-  margin: 0 0 1.5rem;
-}
+#respond #submit { float: left; margin: 0 0 15px; margin: 0 0 1.5rem; }
 
 /* gravity forms */
-/* line 1626, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gform_body {
-  width: 100%;
-  margin: 5px 0 0 0;
-  margin: 0.5rem 0 0 0;
-}
-/* line 1631, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gform_body ul {
-  list-style: none !important;
-  padding: 0 !important;
-  /* set to important to override widget ul styles, etc when forms are in sidebars */
-}
-/* line 1635, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gform_body input {
-  width: 100%;
-}
+.gform_body { width: 100%; margin: 5px 0 0 0; margin: 0.5rem 0 0 0; }
+.gform_body ul { list-style: none !important; padding: 0 !important; /* set to important to override widget ul styles, etc when forms are in sidebars */ }
+.gform_body input { width: 100%; }
 
-/* line 1640, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gfield {
-  margin: 0 0 2.5px;
-  margin: 0 0 0.25rem;
-}
-/* line 1644, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gfield input {
-  font-size: 12px;
-  font-size: 1.2rem;
-  padding: 2.5px;
-  padding: 0.25rem;
-  border: 1px solid #999;
-}
+.gfield { margin: 0 0 2.5px; margin: 0 0 0.25rem; }
+.gfield input { font-size: 12px; font-size: 1.2rem; padding: 2.5px; padding: 0.25rem; border: 1px solid #999; }
 
-/* line 1653, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.ginput_left {
-  width: 48%;
-  float: left;
-  margin: 0 0 2.5px;
-  margin: 0 0 0.25rem;
-}
+.ginput_left { width: 48%; float: left; margin: 0 0 2.5px; margin: 0 0 0.25rem; }
 
-/* line 1660, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.ginput_right {
-  width: 48%;
-  float: right;
-  margin: 0 0 2.5px;
-  margin: 0 0 0.25rem;
-}
+.ginput_right { width: 48%; float: right; margin: 0 0 2.5px; margin: 0 0 0.25rem; }
 
-/* line 1669, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.ginput_left input,
-.ginput_right input {
-  font-size: 12px;
-  font-size: 1.2rem;
-  margin: 0 0 1.25px;
-  margin: 0 0 0.125rem;
-}
+.ginput_left input, .ginput_right input { font-size: 12px; font-size: 1.2rem; margin: 0 0 1.25px; margin: 0 0 0.125rem; }
 
-/* line 1676, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.gform_body textarea {
-  width: 100%;
-  padding: 1.25px 0 0 1.25px;
-  padding: 0.125rem 0 0 0.125rem;
-  font-size: 12px;
-  font-size: 1.2rem;
-  border: 1px solid #999;
-}
+.gform_body textarea { width: 100%; padding: 1.25px 0 0 1.25px; padding: 0.125rem 0 0 0.125rem; font-size: 12px; font-size: 1.2rem; border: 1px solid #999; }
 
-/* line 1686, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-.main-small-navigation,
-.main-small-primary-navigation {
-  padding: 10px;
-  padding: 1rem;
-  width: 82%;
-  margin: auto;
-}
+.main-small-navigation, .main-small-primary-navigation { padding: 10px; padding: 1rem; width: 82%; margin: auto; }
 
 /* media queries for smaller viewports */
-@media only screen and (min-width: 45em) {
-  /* line 1697, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #container {
-    max-width: 980px;
-    max-width: 98rem;
-  }
-
-  /* line 1701, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #main .wrap {
-    padding: 20px 40px;
-    padding: 2.0rem 4rem;
-  }
-
-  /* line 1705, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #header .wrap {
-    padding: 25px 40px 10px 40px;
-    padding: 2.5rem 4rem 1rem 4rem;
-  }
-
-  /* line 1709, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #branding {
-    float: left;
-    width: auto;
-  }
-
-  /* line 1713, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #site-title, #site-description {
-    text-align: left;
-  }
-
-  /* line 1716, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content {
-    float: left;
-    width: 70%;
-  }
-
+@media only screen and (min-width: 45em) { #container { max-width: 980px; max-width: 98rem; }
+  #main .wrap { padding: 20px 40px; padding: 2.0rem 4rem; }
+  #header .wrap { padding: 25px 40px 10px 40px; padding: 2.5rem 4rem 1rem 4rem; }
+  #branding { float: left; width: auto; }
+  #site-title, #site-description { text-align: left; }
+  #content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content { float: left; width: 70%; }
   /* Layouts. These are default setups that allow the user to choose a column setup on a per page basis. */
-  /* line 1722, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-1c #content {
-    width: 100%;
-  }
-
-  /* line 1727, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #sidebar-primary,
-  #sidebar-secondary {
-    width: 25%;
-  }
-
-  /* line 1733, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-2c-l #sidebar-primary,
-  .layout-default #sidebar-primary,
-  .layout-default #sidebar-secondary {
-    float: right;
-  }
-
-  /* line 1736, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-2c-l #sidebar-secondary {
-    clear: left;
-    float: left;
-  }
-
-  /* line 1742, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-2c-r #content {
-    float: right;
-  }
-  /* line 1745, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-2c-r #sidebar-primary {
-    float: left;
-  }
-  /* line 1748, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .layout-2c-r #sidebar-secondary {
-    float: left;
-    clear: left;
-  }
-
-  /* line 1753, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #menu-subsidiary .wrap {
-    padding: 0;
-  }
-
-  /* line 1757, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #footer .wrap {
-    padding: 0;
-  }
-  /* line 1761, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #footer .copyright {
-    float: left;
-    text-align: left;
-    width: 49%;
-  }
-  /* line 1767, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  #footer .credit {
-    float: right;
-    text-align: right;
-    width: 49%;
-  }
-
-  /* line 1773, C:/Users/James/Documents/GitHub/Seamless/style.scss */
-  .comment-list li {
-    padding: 24px 24px 0 24px;
-    padding: 2.4rem 2.4rem 0 2.4rem;
-  }
-}
+  .layout-1c #content { width: 100%; }
+  #sidebar-primary, #sidebar-secondary { width: 25%; }
+  .layout-2c-l #sidebar-primary, .layout-default #sidebar-primary, .layout-default #sidebar-secondary { float: right; }
+  .layout-2c-l #sidebar-secondary { clear: left; float: left; }
+  .layout-2c-r #content { float: right; }
+  .layout-2c-r #sidebar-primary { float: left; }
+  .layout-2c-r #sidebar-secondary { float: left; clear: left; }
+  #menu-subsidiary .wrap { padding: 0; }
+  #footer .wrap { padding: 0; }
+  #footer .copyright { float: left; text-align: left; width: 49%; }
+  #footer .credit { float: right; text-align: right; width: 49%; }
+  .comment-list li { padding: 24px 24px 0 24px; padding: 2.4rem 2.4rem 0 2.4rem; } }
