@@ -1,0 +1,94 @@
+/* Comments */
+
+.comment-list{
+	ol {
+		list-style: none;
+		margin: 0 0 1.5em 0;
+		border-top: 1px solid #dfdfdf;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		padding: 0.500em 0.500em 0 0.500em;
+		margin: 0;
+		border: 1px solid #dfdfdf;
+		border-top: none;
+	}
+	.avatar {
+		float: left;
+		width: 2.813em;
+		height: 2.813em;
+		margin: 0 0.625em 0.313em 0;
+		padding: 0.078em;
+		border: 1px solid #eee;
+	}
+}
+
+.comment-author.vcard {
+    font-size: 0.938em;
+    font-weight: bold;
+}
+
+.comment-meta {
+    margin: 0 0 0.938em 0;
+    font-size: 0.750em;
+    line-height: 1.6;
+    a {
+        &:hover {  }
+    }
+    .comment-author {
+        cite,
+        cite a {  }
+    }
+}
+
+.comment-content {
+	margin-left: 3.750em;
+	clear: both;
+
+	ol {
+		list-style: decimal inside;
+		margin: 0 0 0.938em 1.406em;
+		border-top: none;
+		padding: 0;
+	}
+	ul {
+		list-style: square inside;
+		margin: 0 0 0.938em 1.406em;
+		border-top: none;
+		padding: 0;
+	}
+	li {
+		border: none;
+		padding: 0;
+	}
+}
+
+.comment-list #respond {
+	margin: 1.5em 0 0;
+}
+
+#respond .log-in-out {
+
+	a {
+		font-style: italic;
+	}
+}
+
+#reply-title small a {
+	font-style: italic;
+}
+
+#respond {
+	label {
+	}
+	p.req label {
+	}
+	span.required {
+		color: red;
+	}
+	#submit {
+		float: left;
+		margin: 0 0 0.938em;
+	}
+}

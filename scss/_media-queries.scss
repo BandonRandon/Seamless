@@ -1,0 +1,73 @@
+@media only screen and (min-width: 45em) {
+
+	#container {
+	    max-width: 980px;
+	 }
+	#main .wrap {
+		padding: 1.250em 2.500em;
+	}
+	#header .wrap{
+		padding: 1.563em 2.500em 0.625em 2.500em;
+	}
+	#branding {
+	 	float: left;
+	 	width: auto;
+	 }
+	#site-title, #site-description {
+	 	text-align: left;
+	 }
+	#content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content {
+		float: left;
+		width: 70%;
+	}
+	.layout-1c #content {
+		width: 100%;
+	}
+	#sidebar-primary, 
+	#sidebar-secondary {
+		width: 25%;
+	}
+	.layout-2c-l #sidebar-primary, 
+	.layout-default #sidebar-primary,
+	.layout-default #sidebar-secondary  {
+		float: right;
+	}
+	.layout-2c-l #sidebar-secondary {
+		clear: left;
+		float: left;
+	}
+	.layout-2c-r {
+		#content {
+			float: right;
+		}
+		#sidebar-primary {
+			float: left;
+		}
+		#sidebar-secondary {
+			float: left;
+			clear: left;
+		}
+	}
+	#menu-subsidiary .wrap {
+		padding: 0;
+	}
+	#footer {
+		.wrap {
+			padding: 0;
+		}
+		.copyright {
+			float: left;
+			text-align: left;
+			width: 49%;
+		}
+		.credit {
+			float: right;
+			text-align: right;
+			width: 49%;
+		}
+	}
+	.comment-list li {
+		padding: 1.500em 1.500em 0 1.500em;
+	}
+
+}
