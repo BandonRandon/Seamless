@@ -16,7 +16,7 @@ jQuery( document ).ready( function( $ ) {
 	};
 
 	// Check viewport width on first load.
-	if ( $( window ).width() < 600 )
+	if ( $( window ).width() < 720 )
 		$.fn.smallMenu();
 
 	// Check viewport width when user resizes the browser window.
@@ -27,7 +27,7 @@ jQuery( document ).ready( function( $ ) {
 			clearTimeout( timeout );
 
 		timeout = setTimeout( function() {
-			if ( browserWidth < 600 ) {
+			if ( browserWidth < 720 ) {
 				$.fn.smallMenu();
 			} else {
 				$container.find( '#menu-primary' ).removeClass( 'main-small-navigation' ).addClass( 'primary-navigation' );

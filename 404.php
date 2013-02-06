@@ -14,13 +14,9 @@
 
 get_header(); // Loads the header.php template. ?>
 
-	<?php do_atomic( 'before_content' ); // seamless_before_content ?>
-
 	<div id="content" role="main">
 
-		<?php do_atomic( 'open_content' ); // seamless_open_content ?>
-
-		<div class="hfeed">
+		<section class="hfeed">
 
 			<div id="post-0" class="<?php hybrid_entry_class(); ?>">
 
@@ -38,12 +34,8 @@ get_header(); // Loads the header.php template. ?>
 
 			</div><!-- .hentry -->
 
-		</div><!-- .hfeed -->
-
-		<?php do_atomic( 'close_content' ); // seamless_close_content ?>
+		</section><!-- .hfeed -->
 
 	</div><!-- #content -->
-
-	<?php do_atomic( 'after_content' ); // seamless_after_content ?>
 
 <?php get_footer(); // Loads the footer.php template. ?>

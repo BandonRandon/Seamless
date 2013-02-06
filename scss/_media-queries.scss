@@ -1,13 +1,10 @@
 @media only screen and (min-width: 45em) {
 
 	#container {
-	    max-width: 980px;
-	 }
-	#main .wrap {
-		padding: 1.250em 2.500em;
+	    max-width: 1140px;
 	}
-	#header .wrap{
-		padding: 1.563em 2.500em 0.625em 2.500em;
+	#main .wrap, #header .wrap {
+		padding: 3%;
 	}
 	#branding {
 	 	float: left;
@@ -69,5 +66,4 @@
 	.comment-list li {
 		padding: 1.500em 1.500em 0 1.500em;
 	}
-
 }

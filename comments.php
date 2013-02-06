@@ -24,13 +24,9 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 
 				<h3 id="comments-number" class="comments-header"><?php comments_number( __( 'No Responses', 'seamless' ), __( 'One Response', 'seamless' ), __( '% Responses', 'seamless' ) ); ?></h3>
 
-				<?php do_atomic( 'before_comment_list' );// seamless_before_comment_list ?>
-
 				<ol class="comment-list">
 					<?php wp_list_comments( hybrid_list_comments_args() ); ?>
 				</ol><!-- .comment-list -->
-
-				<?php do_atomic( 'after_comment_list' ); // seamless_after_comment_list ?>
 
 				<?php if ( get_option( 'page_comments' ) ) : ?>
 					<div class="comment-navigation comment-pagination">

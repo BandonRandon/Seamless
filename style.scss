@@ -2,7 +2,7 @@
 
 Theme Name: Seamless
 Theme URI: http://seamlessthemes.com
-Description: A responsive parent theme built on top of Hybrid Core
+Description: A mobile-first parent theme built on top of Hybrid Core
 
 Author: James
 Author URI: http://seamlessthemes.com
@@ -37,33 +37,36 @@ body {
     margin: 3% 0 3% 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  font-style: normal;
-  margin: 0 0 18px 0;
-  line-height: 1.3em;
+    clear: both;
+    font-style: normal;
+    margin: 0 0 18px 0;
+    line-height: 1.3em;
 }
 h1 {
-    font-size: 1.625em;
+    font-size: 1.563em;
 }
 h2 {
-    font-size: 1.313em;
+    font-size: 1.438em;
 }
 h3 {
-    font-size: 1.125em;
+    font-size: 1.313em;
 }
 h4 {
-    font-size: 1em;
+    font-size: 1.188em;
 }
 h5 {
-    font-size: 0.875em;
+    font-size: 1.063em;
 }
 h6 {
-    font-size: 0.75em;
+    font-size: 0.938em;
 }
 a {
-    color: #21759b;
+    color: #999;
     text-decoration: none;
-    &:hover { color: #0f3647; }
+    border-bottom: 1px dotted #666;
+    &:hover { 
+        color: #0f3647; 
+    }
 }
 p,
 pre,
@@ -73,9 +76,16 @@ address,
 embed {
     margin: 0 0 1.625em;
 }
+pre {
+    padding: 1.563em;
+    color: #555;
+    font-size: 0.875em;
+    background: #efefef;
+    border: 1px solid #dfdfdf;
+}
 ul {
     margin: 0 0 1.625em;
-    list-style: disc;
+    list-style: square;
 }
 ol {
     margin: 0 0 1.625em;
@@ -107,28 +117,39 @@ ins {
 }
 textarea { resize: vertical; }
 caption { text-align: left; }
+
+
 table {
+    width: 100%;
     margin: 0 0 1.625em;
-    border: 1px solid #ccc;
-    border-width: 1px 1px 0;
-    text-align: left;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    background: #fff;
+    caption {
+        font: normal normal normal 13px/1.563em Arial, Verdana, sans-serif;
+        color: #999;
+    }
+    th {
+        font: normal normal bold 13px/1.563em Arial, Verdana, sans-serif;
+        padding: 4px 2%;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+        text-align: left;
+    }
 }
-tr { border-bottom: 1px solid #ccc; }
-th,
 td {
-    padding: .7em 1.25em;
-    vertical-align: top;
-}
+    padding: 4px 2%;
+    color: #777;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    }
+
 hr {
     height: 1px;
     margin: 0 0 1.625em;
     border: 0;
     background-color: #e0e0e0;
-}
-::selection {
-    background:#fe57a1;
-    color:#f1f1f1;
-    text-shadow:none;
 }
 blockquote {
     overflow: hidden;
@@ -156,6 +177,10 @@ input, button, textarea {
     padding: 0.250em;
 }
 
+select {
+  max-width: 100%;
+}
+
 button,
 input,
 select,
@@ -169,7 +194,7 @@ textarea {
 .menu-toggle,
 input[type="submit"],
 .pagination .page-numbers {
-    padding: 6px 10px;
+    padding: 6px 0.625em;
     font-size: 0.875em;
     line-height: 1.5;
     font-weight: normal;
@@ -208,7 +233,7 @@ input[type="submit"] {
     float: left;
     width: 130px;
     width: 13rem;
-    margin: 0 15px 0 0;
+    margin: 0 0.938em 0 0;
     margin:0 1.5rem 0 0;
 }
 
@@ -222,7 +247,7 @@ input[type="submit"] {
         width: 65%;
         height: 32px;
         margin: 0;
-        padding: 6px 10px;
+        padding: 6px 0.625em;
         font-size: 12px;
         color: #aaa;
         border: 1px solid #dfdfdf;
@@ -232,7 +257,7 @@ input[type="submit"] {
             background: #fefefe;
             border-color: #cfcfcf;
             height: 32px;
-            padding: 3.75px 6.25px;
+            padding: 3.75px 6.1.563em;
             border: 1px solid #dfdfdf;
         }
     }
@@ -240,10 +265,12 @@ input[type="submit"] {
       float:left;
       border-left: none;
       height: 32px;
-      padding: 6px 10px;
+      padding: 6px 0.625em;
       margin: 0;
     }
 }
+
+/* Alignment */
 
 .alignleft {
     display: inline;
@@ -264,18 +291,8 @@ input[type="submit"] {
 }
 
 .assistive-text {
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
-}
-
-.entry-content a, .entry-summary a,
-.byline a, .entry-meta a, .sidebar a {
-    color: #3388bb;
-
-    &:hover {
-        color: #004466;
-    }
 }
 
 
@@ -294,15 +311,6 @@ input[type="submit"] {
     padding: 0px;
 }
 
-.entry-content h1, .entry-content h2,.entry-content h3, 
-.entry-content h4, .entry-content h5, .entry-content h6 {   
-    line-height: 1.5;   
-}
-
-.loop-title, .singular .hfeed .entry-title {
-    font-size: 1.313em;
-}
-
 #main {
     overflow: hidden;
     width: 100%; 
@@ -310,6 +318,7 @@ input[type="submit"] {
         overflow: hidden;
         clear: both;
         margin: 0 auto;
+        padding: 2%;
     }
 }
     
@@ -319,143 +328,188 @@ input[type="submit"] {
 
 .layout-default .hfeed, 
 .layout-2c-l .hfeed { 
-    margin: 0.875em 0 0.875em 0;
+    margin: 0.875em 0;
 }
 
 .layout-2c-r .hfeed { 
-    margin: 1.000em 0 1.000em 0;
+    margin: 1.000em 0;
 }
 
 .page-template-front-page #content {
     padding: 0;
 }
 
+/* Posts */
 .hentry {
-    margin: 0 0 1.750em 0;
-    padding: 0 0 0.500em 0;
+    overflow: hidden;
+    margin: 0 0 1.563em 0;
+    font-size: 1.000em;
+    color: #444;
 }
 .singular .hentry {
     margin: 0;
 }
-
-.blog .hfeed .hentry, 
-.archive .hfeed .hentry,
-.search .hfeed .hentry {
-    
-}
-
 .sticky {
-    padding: 15px;
-    background: #F9F9F9;
-    border-left: 5px solid #DDD;
-}
-
-.hentry .thumbnail {
-    float: left;
-    margin: 0 15px 10px 0;
-    padding: 4px;
+    margin: 0 0 3.125em 0;
+    padding: 1.563em 1.563em 0 1.563em;
     background: #f9f9f9;
-    border: 1px solid #dfdfdf;
+    border-left: 5px solid #ddd;
 }
 
-
-.sticky .thumbnail {
-}
-
-.entry-title {
-    font-weight: bold;
-    margin: 0 0 12px 0;
+/* Post titles */
+.hentry .entry-title {
+    margin: 0 0 0.625em 0;
+    padding: 0;
+    font-size: 1.250em;
+    text-shadow: 1px 1px 1px #ccc;
+    border: none;
 }
 .singular .entry-title {
-    margin: 0 0 8.5px 0;
+    font-size: 1.563em;
+    line-height: 1.875em;
 }
-.singular-page .entry-title, 
-.singular-attachment .entry-title {
-    margin: 0 0 15px;
+.singular-page .entry-title, .singular-attachment .entry-title {
+    margin-bottom: 1.563em;
 }
-    
 .entry-title a {
+    color: #000;
     border-bottom: none;
+}
+.entry-title a:hover {
+    text-decoration: underline;
+}
+
+/* Post bylines/datelines */
+.byline {
+    margin: 0 0 0.625em 0;
+    font-size: 0.875em;
+    color: #999;
+}
+.byline a {
+    color: #777;
+    border-bottom: 1px dotted #ccc;
+}
+.byline a:hover {
+    color: #000;
+    border-bottom: 1px dotted #333;
     text-decoration: none;
 }
-
-.byline {
-    margin: 0 0 15px 0;
-    font-size: 13px;    
-    a {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
 .singular .byline {
-    margin: 0 0 15px 0;
+    margin: 0 0 1.563em 0;
 }
 
-.entry-content {
+/* Post excerpts */
+.entry-summary p {
+    margin: 0 0 0.625em 0;
 }
 
+/* Post metadata */
 .entry-meta {
     clear: both;
-    padding: 10px 0;
-    font-size: 13px;
-    
+    margin: 0 0 1.563em 0;
+    font-size: 0.875em;
+    color: #999;
     a {
-        &:hover {
-            text-decoration: underline;
-        }
+        color: #777;
+        border-bottom: 1px dotted #ccc;
+    }
+    a:hover {
+        color: #000;
+        border-bottom: 1px dotted #333;
+        text-decoration: none;
     }
 }
 
+/* Archive/search loop meta/info */
 .loop-meta {
-    margin: 0 0 15px 0;
-    font-size: 16px;
+    overflow: hidden;
+    margin: 0 0 1.563em 0;
+    font-size: 0.875em;
+    color: #777;
 }
 .loop-description {
     overflow: hidden;
     font-style: italic;
-
-    p {
-        margin: 0;
-    }
     em {
         font-style: normal;
     }
 }
-.loop-title {   
-    margin: 0;
+.loop-title {
+    font-siZe: 1.563em;
+    text-shadow: 1px 1px 1px #ccc;
+}
+.loop-meta .avatar {
+    float: left;
+    width: 51px;
+    height: 51px;
+    margin: 0 1.563em 0.625em 0;
+    padding: 2px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
 
-    .avatar {
-        float: left;
-        width: 31.875px;
-        height: 31.875px;
-        margin: 0 15px 5px 0;
-        padding: 0;
+/* Singular post prev/next links */
+.singular .loop-nav {
+    font-size: 0.938em;
+    color: #666;
+    a {
+        font-style: italic;
     }
 }
 
-.singular {
-    .loop-nav {
-        font-size: 15px;
-        line-height: 1;
-        margin: 20px 0 40px 0;
-        overflow: hidden;
-        a {
-            text-decoration: underline;
-        }
+/* Page links for multi-paged posts <!--nextpage--> */
+.page-links {
+    clear: both;
+    font-style: 0.813em;
+    font-weight: bold;
+    color: #333;
+    a {
+        display: inline-block;
+        padding: 8px 11px;
+        margin: 0 5px;
+        color: #aaa;
+        border: 1px solid #dfdfdf;
     }
 }
-.loop-nav {
-    .next {
-        float: right;
-        text-align: right;
+.entry-summary .page-links {
+    clear: none;
+    color: #999;
+    a {
+        margin: 0 2px;
+        padding: 4px 7px;
+        border-color: #e9e9e9;
     }
-    .previous {
-        float: left;
-        text-align: left;
+    a:hover {
+        color: #eee;
+        background: #252525;
+        text-decoration: underline;
     }
 }
 
+/* Archive/search pagination and comment pagination */
+.comment-navigation {
+    margin-bottom: 1.563em;
+    }
+.pagination .page-numbers, .comment-navigation .page-numbers {
+    display: inline-block;
+    padding: 8px 11px;
+    margin: 0 0.625em 0 0;
+    font-size: 0.813em;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #dfdfdf;
+    }
+.pagination a.page-numbers, .comment-navigation a.page-numbers {
+    color: #aaa;
+    }
+.pagination a:hover, .comment-navigation a:hover {
+    color: #eee;
+    background: #252525;
+    text-decoration: underline;
+    }
+.pagination .current, .comment-navigation .current {
+    font-weight: bold;
+    }
 
 /* =Site Header
 ----------------------------------------------- */
@@ -472,11 +526,10 @@ input[type="submit"] {
     .wrap{
         clear: both;
         margin: 0 auto;
-        padding: 25px 20px 10px 20px;
+        padding: 2%;
         overflow: visible;
     }
 }
-
 #branding {
     overflow: hidden;
     background: none;
@@ -484,15 +537,15 @@ input[type="submit"] {
     margin: 0;  
     width: 100%;
 }
-
 #site-title { 
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625em 0;
     font-weight: bold;
     a {
         color: #515151;
         display: block;
         text-decoration: none;
+        border-bottom: none;
         &:hover {
             color: #21759b;
         }
@@ -500,10 +553,11 @@ input[type="submit"] {
 }
 
 #site-description {
-    text-align: center;
-    font-size: 0.813em;
     padding: 0;
-    margin-bottom: 0.938em;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.813em;
 }
 
 #sidebar-header {
@@ -513,13 +567,6 @@ input[type="submit"] {
     width: 50%;
     margin: 0;
     padding: 0;
-
-    .widget {
-        float: right;
-        width: 47.5%;
-        margin: 0 0 0 2.5%;
-    }
-
     .widget-title {
         margin: 0;
     }
@@ -537,8 +584,7 @@ input[type="submit"] {
     clear: both;
     display: block;
     text-align: left;
-    padding: 0 2.500em;
-
+    padding: 0 3%;
     .wrap {
         margin: 0 auto;
         position: relative;
@@ -561,6 +607,7 @@ input[type="submit"] {
         float: left;
         display: block;
         text-decoration: none;
+        border-bottom: none;
         line-height: 2.5;
         margin: 0 1.250em;
     }
@@ -574,31 +621,38 @@ input[type="submit"] {
         left: 0;
         z-index: 9999;
     }
+    ul ul {
+        left: 100%;
+        top: 0;
+    }
 }
 .primary-navigation {
+    li {
+        float: left;
+        position: relative;
+    }
     ul li { 
         float: left; 
         display: inline; 
         position: relative; 
         margin: 0;
+        &:hover > ul {
+            display: block;
+        }
     }
-    ul ul li a { 
+    ul ul li a {
         width: 200px; 
         display: block;
+        margin: 0;
         padding: 0.500em 0.625em;
         background: #eee;
         border-top: 1px solid #ddd;
         line-height: 1.5;
     }
 }
-.primary-navigation li {
-    float: left;
-    position: relative;
-}
-.primary-navigation ul ul ul {
-    left: 100%;
-    top: 0;
-}
+
+/*Leaving this for theme authors to use if needed */
+
 .primary-navigation ul ul li {
 }
 .primary-navigation li:hover > a {
@@ -606,9 +660,6 @@ input[type="submit"] {
 .primary-navigation ul ul :hover > a {
 }
 .primary-navigation ul ul a:hover {
-}
-.primary-navigation ul li:hover > ul {
-    display: block;
 }
 .primary-navigation li.current_page_item a,
 .primary-navigation li.current-menu-item a {
@@ -619,10 +670,9 @@ input[type="submit"] {
 .menu-toggle {
     cursor: pointer;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0.938em 0;
     padding: 5px 35px;
 }
-
 .main-small-navigation,
 .main-small-primary-navigation {
     text-align: center;
@@ -637,99 +687,7 @@ input[type="submit"] {
         }
 }
 
-/* =Content
------------------------------------------------ */
-
-/* Styles for posts and pages */
-.sticky { /* Style your sticky posts. This class is applied to the same element as .hentry below. */
-    
-}
-.hentry { /* The wrapper for individual posts */
-    margin: 0 0 1.5em;
-    padding-bottom: 1.5em;
-}
-.entry-header { /* Container for the entry title, byline and post date */
-    
-}
-.entry-title, 
-.entry-title a { /* Post titles */
-
-}
-.page-title { /* Page titles */
-
-}
-body.search .page-title,
-body.archive .page-title { /* Optional, if you want your page titles to look different on search and archive pages */
-
-}
-.entry-meta { /* Container for the entry metadata */
-    clear: both;
-}
-.entry-date { 
-    
-}
-.byline { /* By default, bylines are hidden */
-    display: none;
-}
-.single .byline,
-.group-blog .byline { /* Bylines are displayed on single posts and/or when there are multiple authors */
-    display: inline;
-}
-.cat-links {  /* Styles category links inside the entry meta */
-    
-}
-.tag-links { /* Styles links to tags inside the entry-meta */
-    
-}
-.sep {  /* Separator between category links, cat links, comments links, etc */
-    
-}
-.comments-link {  /* Link to leave a comment */
-    
-}
-.edit-link { /* Link to Edit the post (only shows up for admins)
-    
-}
-.entry-content,
-.entry-summary { /* Container for the post body/excerpt text */
-    margin: 1.5em 0 0;
-}
-
-/* Styling In-Post Tables */
-.entry-content table,
-.comment-content table {
-    border: 1px solid #000;
-    border-left-width: 0;
-    margin: 0 -0.083em 2.083em 0;
-    text-align: left;
-    width: 100%;
-}
-.entry-content tr th,
-.entry-content thead th,
-.comment-content tr th,
-.comment-content thead th {
-    border-left: 1px solid #000;
-    font-weight: bold;
-    padding: 0.5em  1.25em;
-}
-.entry-content tr td,
-.comment-content tr td {
-    border: 1px solid #000;
-    border-width: 1px 0 0 1px;
-    padding: 0.5em  1.25em;
-}
-.entry-content tr.odd td,
-.comment-content tr.odd td { /* If you want to apply alternate styles to even/odd table rows */
-
-}
-
-.page-links { /* Style the page numbers for multi-page posts (posts that have been split with <!--next-page -->. */
-    clear: both;
-    margin: 0 0 1.5em;
-}
-
-
-/* =Layouts and Post Formats
+/* =Layouts
 ----------------------------------------------- */
 
 .layout-1c #content {
@@ -747,7 +705,7 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
 #sidebar-primary, 
 #sidebar-secondary {
     width: 100%;
-    padding: 2% 2% 0 2%;
+    padding: 2% 0 0 0;
 }
 
 .layout-2c-l,
@@ -775,23 +733,6 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
     }
 }
 
-.format-gallery.hentry .thumbnail {
-    border: 4px solid #fff;
-    box-shadow:
-        0 0 0 1px #ccc,
-        5px 5px 0 0 #fff,
-        5px 5px 0 1px #ccc;
-    margin: 0 15px 10px 0;
-}
-.format-aside .entry-content {
-    padding: 15px;
-    background: #F9F9F9;
-    border-left: 5px solid #DDD;
-}
-.format-quote blockquote {
-    margin: 0;
-}
-
 /* =Media
 ----------------------------------------------- */
 
@@ -800,41 +741,10 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
 
 /* =Pagination and Breadcrumbs
 ----------------------------------------------- */
-
-.page-links {
-    clear: both;
-    margin: 10px 0;
-    margin: 1rem 0; 
-
-    a {
-        display: inline-block;
-        padding: 2.5px;
-        padding: 0.25rem;
-    &:hover {
-    }
-    }
-}
-
-.pagination {
-    &.loop-pagination {
-        padding-bottom: 1.875em;
-    }
-    .page-numbers {
-        display: inline-block;
-        padding: 0.156em 0.469em;
-        margin: 0 0.469em 0 0;    
-    }
-    a.page-numbers {
-    }
-    a:hover {
-    }
-    .current {
-    }
-}
     
 .breadcrumbs {
     font-size: 0.875em;
-    margin: 0.313em 0 1.250em 0;
+    margin: 0 0 1.250em 0;
     color: #999;
 
     .trail-before {
@@ -858,6 +768,7 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
 .sep {
     display: inline-block;
     margin: 0 0.234em;
+    color: #ccc;
 }
 
 /* =Comments
@@ -866,132 +777,112 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
 @import 'scss/comments';
 
 
-/* =Widgets
+/* =Sidebars and Widgets
 ----------------------------------------------- */
 
-.widget-area { /* All of the sidebar container divs get this common class */
-    
+/* Sidebar after singular posts */
+#sidebar-after-singular {
+    overflow: hidden;
+    margin: 0 0 2.5% 0;
+    padding: 2.5% 2.5% 0 2.5%;
+    font-size: 0.875em;
+    color: #444;
+    background: #f9f9f9;
+    border-left: 5px solid #ddd;
+    .widget {
+        margin-bottom:2.5%;
+    }
+    .widget-title {
+        font-size: 0.938em;
+        line-height: 0.938em;
+    }
 }
-.widget { /* The individual widget */
-    margin: 0 0 1.5em;
-}
-.widget-title {
-
-}
-.widget ul { /* Unordered lists inside widgets */
-    list-style: none;
-    margin: 0;
-}
-.widget ul li { /* Unordered list items inside widgets */
-    margin-bottom: 0.25em;
-}
-
-/* Search widget */
-#searchsubmit {
-    display: none;
-}
-.widget_search #s {
-
-}
-
-/* Sub-Items in Menu & Categories Widgets. These classes are useful if you want to add special styling, such as indention, to sub-items in your menu and categories widgets. */
-.widget-area .sub-menu,
-.widget-area .children { 
-    margin-left:  1.5em;
-}
-.widget-area .sub-menu li,
-.widget-area .children li {
-
+#sidebar-after-singular .widget ul {
+    list-style: square;
+    li a {
+        color: #555;
+        border-bottom: 1px dotted #bbb;
+    }
+    li a:hover {
+        color: #000;
+        border-bottom: 1px dotted #333;
+        text-decoration: none;
+    }
 }
 
-/* Text Widgets */
-.widget p,
-.textwidget {
-
+/* Widget title */
+#sidebar-primary .widget-title, #sidebar-secondary .widget-title {
+    font-size: 0.875em;
 }
-.widget p a,
-.textwidget a {
-
+/* Widget unordered lists */
+#sidebar-primary .widget ul {
+    list-style: square;
+    li a {
+        color: #777;
+        border-bottom: 1px dotted #bbb;
+    }
+    a:hover {
+        color: #000;
+        border-bottom: 1px dotted #333;
+        text-decoration: none;
+    }
+}
+#sidebar-secondary .widget ul {
+    list-style: square;
+    li a {
+        color: #777;
+        border-bottom: 1px dotted #bbb;
+    }
+    li a:hover {
+        color: #000;
+        border-bottom: 1px dotted #333;
+        text-decoration: none;
+    }
 }
 
-/* Cloud Widgets */
-.wp_widget_tag_cloud div,
-.widget_tag_cloud div {
-    line-height: 1.5;
-    padding: 0.231em 0;
-}
-
-/* RSS Widget */
-.rsswidget img { /* This is the orange RSS icon to the left of the RSS widget title */
-    margin: 0;
-    vertical-align: text-top;
-}
-.rss-date {
-
-}
-.rssSummary {
-
-}
-
-/* Calendar Widget */
-#wp-calendar {
+/* Subsidiary sidebar */
+#sidebar-subsidiary {
+    overflow: hidden;
     width: 100%;
+    margin: 0 auto;
+    .widget {
+        float: left;
+        width: 100%;
+        margin: 0 3% 2.5% 0;
+        font-size: 0.875em;
+        color: #333;
+    }
+    .widget-title {
+        font-size: 0.938em;
+    }
 }
-#wp-calendar caption {
-    font-style: italic;
-}
-#wp-calendar thead th {
-    text-align: center;
-}
-#wp-calendar tbody,
-#wp-calendar tbody td {
-    border: 1px solid #000;
-}
-#wp-calendar tbody {
-    border-left-width: 0;
-}
-#wp-calendar tbody td {
-    border-width: 1px 0 0 0;
-}
-#wp-calendar tbody td a {
-    font-weight: bold;
-}
-#wp-calendar tbody td:hover {
-
-}
-#wp-calendar tfoot #next {
-    text-align: right;
-}
-#wp-calendar #today {
-    font-weight: bold;
-}
-#wp-calendar #prev,
-#wp-calendar #next {
-
-}
-#wp-calendar tbody .pad {
-
+#sidebar-subsidiary .widget ul {
+    list-style: square;
+    li a {
+        color: #777;
+        border-bottom: 1px dotted #bbb;
+    }
+    li a:hover {
+        color: #000;
+        border-bottom: 1px dotted #333;
+        text-decoration: none;
+    }
 }
 
+/* end sidebar styles */
 
 /* =Site Footer
 ----------------------------------------------- */
 
 #footer {
     width: 100%;
-
     .wrap {
         margin: 0 !important;
         padding: 0;
         width: 100%;
         border-top: 1px solid #DDD;
     }
-    a {
-        &:hover {
-        }
-    }
 }
-
 #footer {
     .copyright {
         float: left;
@@ -1007,197 +898,9 @@ body.archive .page-title { /* Optional, if you want your page titles to look dif
         padding: 0.938em 0;
         margin: 0;
     }
-    .copyright a, 
-    .credit a {
-    } 
 }
-
 
 /* =Media Queries
 ----------------------------------------------- */
 
 @import 'scss/media-queries';
-
-
-
-/* general sidebars */
-
-.widget {
-    padding: 0 0 20px 0;
-    padding: 0 0 2.0rem 0;
-}
-.widget-title {
-    font-weight: bold;
-    margin: 0 0 10px;
-    margin: 0 0 1.0rem;
-}
-
-.sidebar .widget {
-    ul {
-        list-style: none;
-        padding: 0;
-        margin-left: 5px;
-        margin-left: .5rem;
-    }
-    li {
-        margin: 0;
-    }
-    &> ul {
-        padding: 0;
-    }
-}
-.sidebar .widget {
-    ul li a {
-        font-size: 13px;
-        font-size: 1.3rem;
-    }
-    ul li a:hover {
-    }
-    ul ul li {
-        margin-left: 10px;
-        margin-left: 1.0rem;
-    }
-}
-
-/* #sidebar-secondary widget area */
-
-/* #sidebar-after-singular widget area */   
-    
-#sidebar-after-singular {
-    overflow: hidden;
-    margin: 15px 0;
-    margin: 1.5rem 0;
-
-    .widget-title {
-    }
-}
-
-#sidebar-after-singular .widget ul {
-    list-style: square inside;
-
-    li a {
-    }
-        &:hover {
-        }
-    }
-
-/* end sidebar styles */
-    
-
-/* subsidiary nav */
-
-#menu-subsidiary .wrap {
-    padding: 0;  
-}
-
-.subsidiary-navigation {
-    clear: both;
-    display: block;
-    width: 100%;    
-    text-align: center;
-
-    .wrap {
-        margin: 0 auto;
-        position: relative;
-        overflow: visible;
-        background: #eee;
-    }
-    .wrap:after {  
-        content:"."; 
-        clear:both; 
-        display:block; 
-        height:0; 
-        visibility:hidden; 
-    }
-}
-.subsidiary-navigation ul { 
-    margin: 0; 
-    padding: 0; 
-    list-style: none; 
-    position: relative; 
-
-    ul {
-        width: 160px; /* Sub Menu Width */
-        margin: 0;
-        list-style: none;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 9999;
-    }
-    ul ul,
-    ul ul ul { 
-        top: 0; 
-        left: 100%; 
-    }
-}
-
-.subsidiary-navigation {
-    ul li { 
-    float: left; 
-    display: inline; 
-    position: relative;
-    margin: 0; 
-    }
-    ul ul li { 
-        width: 100%; 
-        display: block; 
-    }
-}
-
-/* Root Menu */
-
-.subsidiary-navigation ul a {
-    float: left;
-    display: block;
-    text-decoration: none;
-    padding: 10px 0;    
-    padding: 1.0rem 0;
-    margin: 0 20px;
-    margin: 0 2rem;
-    height: 1%;
-
-    /* Root Menu Hover Persistence */
-
-    &:hover,
-    li:hover a,
-    li.iehover a {
-        color: #000;
-    }
-}
-
-/* #sidebar-subsidiary widget area */
-
-#sidebar-subsidiary {
-    overflow: hidden;
-    width: 100%;
-
-    .wrap {
-        padding: 1.5em;
-    }
-
-    .widget {
-        width: 31%;
-        float: left;
-        margin: 1% 1% 4% 1%;
-        padding: 0 1%;
-    }
-        a {
-        }
-
-    .widget-title {
-        margin: 0 0 5px 0;
-        margin: 0 0 0.5rem 0;
-        padding: 0;
-    }
-}
-
-#sidebar-subsidiary .widget ul {
-    list-style: square inside;
-
-    li a {
-    }
-        &:hover {
-        }
-}
