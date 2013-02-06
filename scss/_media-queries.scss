@@ -9,10 +9,28 @@
 	#branding {
 	 	float: left;
 	 	width: auto;
-	 }
+	}
 	#site-title, #site-description {
 	 	text-align: left;
-	 }
+	}
+	#sidebar-header {
+    overflow: hidden; 
+    float: right;
+    background: none;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+	    .widget {
+	        float: right;
+	        padding: 1% 0 0 0;   
+	    }
+	    .widget-title {
+	        margin: 0;
+	    }    
+	    .entry-title {
+	        font-size: 0.938em;
+	    }
+	}
 	#content, .layout-2c-l #content, .layout-2c-r #content, .layout-default #content {
 		float: left;
 		width: 70%;
@@ -24,6 +42,14 @@
 	#sidebar-secondary {
 		width: 25%;
 	}
+	#sidebar-subsidiary .widget {
+		width: 23%;
+		float: left;
+		margin: 0 1% 0 0;
+		padding: 0 1% 0 0;
+        font-size: 0.875em;
+        color: #333;
+    }
 	.layout-2c-l #sidebar-primary, 
 	.layout-default #sidebar-primary,
 	.layout-default #sidebar-secondary  {

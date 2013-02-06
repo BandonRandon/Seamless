@@ -32,9 +32,9 @@
 
 	<?php } else { ?>
 
-		<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
-
 		<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
+
+		<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 
 		<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'seamless' ) . '</div>' ); ?>
 
