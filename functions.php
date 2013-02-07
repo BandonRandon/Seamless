@@ -21,8 +21,8 @@
  * @package Seamless
  * @subpackage Functions
  * @version 0.4.0
- * @author Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2010 - 2012, Justin Tadlock
+ * @author James Geiger <james@seamlessthemes.com>
+ * @copyright Copyright (c) 2013, James Geiger
  * @link http://themehybrid.com/themes/seamless
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -54,7 +54,6 @@ function seamless_theme_setup() {
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
 	/* Add theme support for framework extensions. */
-	add_theme_support( 'theme-layouts', array( '1c', '2c-l', '2c-r' ) );
 	add_theme_support( 'post-stylesheets' );
 	add_theme_support( 'dev-stylesheet' );
 	add_theme_support( 'loop-pagination' );
@@ -62,15 +61,16 @@ function seamless_theme_setup() {
 	add_theme_support( 'breadcrumb-trail' );
 	add_theme_support( 'cleaner-gallery' );
 
+	/* Add theme support for framework extensions. */
+	add_theme_support( 
+		'theme-layouts', 
+		array( '1c', '2c-l', '2c-r' ),
+		array( 'default' => '2c-l' )
+	);
+
 	/* Add theme support for WordPress features. */
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'custom-background', array( 'default-color' => 'E6E6E6' ) );
-
-	/* Register support for some post formats */
-	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', 'quote', 'video' ) );
-
-    /* Wraps <blockquote> around quote posts. */
-	add_filter( 'the_content', 'seamless_quote_content' );
 
     /* Adds the featured image to image posts if no content is found. */
 	add_filter( 'the_content', 'seamless_image_content' );
@@ -190,85 +190,5 @@ function seamless_fonts() {
  
 add_action('wp_print_styles', 'seamless_fonts');
 
-/**
- * Returns the number of images attached to the current post in the loop.
- *
- * @since 0.1.0
- * @return int
- * @note This is copied from Justin Tadlock's Theme Hybrid theme, Picturesque.
- * @author Justin Tadlock
- * @copyright Copyright (c), Justin Tadlock
- * @link http://themehybrid.com
- */
-function seamless_get_image_attachment_count() {
-
-	$images = get_children( array( 'post_parent' => get_the_ID(), 'post_type' => 'attachment', 'post_mime_type' => 'image', 'numberposts' => -1 ) );
-
-	return count( $images );
-
-}
-
-/**
- * Wraps the output of the quote post format content in a <blockquote> element if the user hasn't added a 
- * <blockquote> in the post editor.
- *
- * @since 0.1.0
- * @param string $content The post content.
- * @return string $content
- */
-function seamless_quote_content( $content ) {
-
-	if ( has_post_format( 'quote' ) ) {
-		preg_match( '/<blockquote.*?>/', $content, $matches );
-
-		if ( empty( $matches ) )
-			$content = "<blockquote>{$content}</blockquote>";
-	}
-
-	return $content;
-}
-
-/**
- * Returns the featured image for the image post format if the user didn't add any content to the post.
- *
- * @since 0.1.0
- * @param string $content The post content.
- * @return string $content
- */
-function seamless_image_content( $content ) {
-
-	if ( has_post_format( 'image' ) && '' == $content ) {
-		if ( is_singular() )
-			$content = get_the_image( array( 'size' => 'full', 'meta_key' => false, 'link_to_post' => false ) );
-		else
-			$content = get_the_image( array( 'size' => 'full', 'meta_key' => false ) );
-	}
-
-	return $content;
-}
-
-/**
- * Grabs the first URL from the post content of the current post.  This is meant to be used with the link post 
- * format to easily find the link for the post. 
- *
- * @since 0.1.0
- * @return string The link if found.  Otherwise, the permalink to the post.
- *
- * @note This is copied from Justin Tadlock's Theme Hybrid. He modified it from twenty eleven - see below.
- * @note This is a modified version of the twentyeleven_url_grabber() function in the TwentyEleven theme.
- * @author wordpressdotorg
- * @copyright Copyright (c) 2011 - 2012, wordpressdotorg
- * @link http://wordpress.org/extend/themes/twentyeleven
- * @license http://wordpress.org/about/license
- */
-function seamless_url_grabber() {
-
-	if ( ! preg_match( '/<a\s[^>]*?href=[\'"](.+?)[\'"]/is', get_the_content(), $matches ) )
-
-		return get_permalink( get_the_ID() );
-
-	return esc_url_raw( $matches[1] );
-
-}
 
 ?>
