@@ -19,21 +19,26 @@
 
 		<?php get_template_part( 'menu', 'subsidiary' ); // Loads the menu-subsidiary.php template. ?>
 
+		<?php do_atomic( 'before_footer' ); // seamless_before_footer ?>
 		<div id="footer">
-
+		<?php do_atomic( 'open_footer' ); // seamless_open_footer ?>
 			<div class="wrap">
-
 				<?php echo apply_atomic_shortcode( 'footer_content', hybrid_get_setting( 'footer_insert' ) ); ?>
-
+				<?php do_atomic( 'footer' ); // seamless_footer ?>
 			</div><!-- .wrap -->
-
+		
+		<?php do_atomic( 'close_footer' ); // seamless_close_footer ?>
+		
 		</div><!-- #footer -->
-
+		<?php do_atomic( 'after_footer' ); // seamless_after_footer ?>
+		<?php do_atomic( 'close_main' ); // seamless_close_main ?>
 			</div><!-- .wrap -->
 
 		</div><!-- #main -->
-	
+		<?php do_atomic( 'after_main' ); // seamless_after_main ?>
         </div><!-- #container -->
+
+	<?php do_atomic( 'close_body' ); // seamless_close_body ?>
 
 	<?php wp_footer(); // wp_footer ?>
 
