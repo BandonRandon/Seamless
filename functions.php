@@ -72,9 +72,6 @@ function seamless_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'custom-background', array( 'default-color' => 'E6E6E6' ) );
 
-    /* Adds the featured image to image posts if no content is found. */
-	add_filter( 'the_content', 'seamless_image_content' );
-
 	/* Embed width/height defaults. */
 	add_filter( 'embed_defaults', 'seamless_embed_defaults' );
 
